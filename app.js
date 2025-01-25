@@ -144,13 +144,13 @@ io.on('connection', (socket) => {
   });
 });
 
-// Endpoint para consultar el estado de las salas (opcional)
-app.get('/rooms', (req, res) => {
+// Endpoint para consultar el estado de las salas
+app.get('/api/rooms', (req, res) => {
   const roomStatus = {};
   for (const [room, clients] of rooms.entries()) {
     roomStatus[room] = Array.from(clients); // Mostrar IDs de clientes en cada sala
   }
-  res.json(roomStatus);
+  res.json(roomStatus); // Respuesta en formato JSON
 });
 
 // Servir archivos estáticos (opcional)
