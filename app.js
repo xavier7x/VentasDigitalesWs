@@ -84,73 +84,102 @@ setInterval(() => limpiarLogsAntiguos(3), INTERVALO_LIMPIEZA);
 io.on('connection', (socket) => {
   log('general', `Nueva conexión establecida: ${socket.id}`);
 
+  // Manejar errores inesperados en cada socket
+  socket.on('error', (err) => {
+    log('general', `Error en la conexión de ${socket.id}: ${err.message}`);
+    socket.disconnect(); // Desconectar al cliente defectuoso
+  });
+
   // Unir al cliente a una sala (room)
   socket.on('joinRoom', (entornoConModulo) => {
-    const room = entornoConModulo;
+    try {
+      const room = entornoConModulo;
 
-    // Registrar al usuario en la sala
-    if (!rooms.has(room)) {
-      rooms.set(room, new Set());
+      // Registrar al usuario en la sala
+      if (!rooms.has(room)) {
+        rooms.set(room, new Set());
+      }
+      rooms.get(room).add(socket.id);
+      socket.join(room);
+
+      log(room, `Cliente ${socket.id} unido a la room: ${room}`);
+    } catch (err) {
+      log('general', `Error al unir cliente a la room: ${err.message}`);
     }
-    rooms.get(room).add(socket.id);
-    socket.join(room);
+  });
 
-    log(room, `Cliente ${socket.id} unido a la room: ${room}`);
-
-    // Escuchar eventos en la sala
-    socket.on('actualizarEstadoVenta', (data) => {
-      log(room, `Mensaje recibido en ${room}: ` + JSON.stringify(data));
+  // Escuchar eventos en la sala
+  socket.on('actualizarEstadoVenta', (data) => {
+    try {
+      log('general', `Mensaje recibido: ${JSON.stringify(data)}`);
       if (data.venta_id && data.estado_nuevo) {
-        io.to(room).emit('actualizarEstadoVenta', data); // Emitir evento a la sala
-        log(room, `Emitido a room ${room}: Actualización de venta ID ${data.venta_id}`);
+        io.to(data.room).emit('actualizarEstadoVenta', data); // Emitir evento a la sala
+        log(data.room, `Emitido a room: ${data.venta_id}`);
       } else {
-        log(room, 'Mensaje recibido con formato incorrecto.');
+        log('general', 'Mensaje recibido con formato incorrecto.');
       }
-    });
+    } catch (err) {
+      log('general', `Error al procesar evento: ${err.message}`);
+    }
+  });
 
-    socket.on('nuevoComentario', (data) => {
-      log(room, `Mensaje recibido en ${room}: ` + JSON.stringify(data));
+  socket.on('nuevoComentario', (data) => {
+    try {
       if (data.venta_id && data.estado_nuevo) {
-        io.to(room).emit('nuevoComentario', data); // Emitir evento a la sala
-        log(room, `Emitido a room ${room}: Comentario en venta ID ${data.venta_id}`);
+        io.to(data.room).emit('nuevoComentario', data);
+        log(data.room, `Emitido nuevoComentario a la room`);
       } else {
-        log(room, 'Mensaje recibido con formato incorrecto.');
+        throw new Error('Datos inválidos en nuevoComentario');
       }
-    });
+    } catch (err) {
+      log('general', `Error al manejar nuevoComentario: ${err.message}`);
+    }
   });
 
   // Manejo de desconexión
   socket.on('disconnect', () => {
     log('general', `Conexión cerrada: ${socket.id}`);
+    try {
+      for (const [room, clients] of rooms.entries()) {
+        if (clients.has(socket.id)) {
+          clients.delete(socket.id);
+          log(room, `Cliente ${socket.id} removido de la room: ${room}`);
 
-    // Remover al usuario de todas las salas
-    for (const [room, clients] of rooms.entries()) {
-      if (clients.has(socket.id)) {
-        clients.delete(socket.id);
-        log(room, `Cliente ${socket.id} removido de la room: ${room}`);
-
-        // Eliminar la sala si queda vacía
-        if (clients.size === 0) {
-          rooms.delete(room);
-          log('general', `Room eliminada porque quedó vacía: ${room}`);
+          // Eliminar la sala si queda vacía
+          if (clients.size === 0) {
+            rooms.delete(room);
+            log('general', `Room eliminada: ${room}`);
+          }
         }
       }
+    } catch (err) {
+      log('general', `Error al manejar desconexión: ${err.message}`);
     }
-  });
-
-  // Manejo de errores
-  socket.on('error', (err) => {
-    log('general', `Error en la conexión de ${socket.id}: ${err}`);
   });
 });
 
+// Manejo global de errores en el servidor
+process.on('uncaughtException', (err) => {
+  console.error('Excepción no controlada:', err.message);
+  // Opcional: reiniciar el servidor si es crítico
+});
+
+process.on('unhandledRejection', (reason, promise) => {
+  console.error('Promesa rechazada sin manejar:', reason);
+  // Opcional: reiniciar el servidor si es crítico
+});
+
 // Endpoint para consultar el estado de las salas
-app.get('/api/rooms', (req, res) => {
-  const roomStatus = {};
-  for (const [room, clients] of rooms.entries()) {
-    roomStatus[room] = Array.from(clients); // Mostrar IDs de clientes en cada sala
+app.get('/rooms', (req, res) => {
+  try {
+    const roomStatus = {};
+    for (const [room, clients] of rooms.entries()) {
+      roomStatus[room] = Array.from(clients); // Mostrar IDs de clientes en cada sala
+    }
+    res.json(roomStatus);
+  } catch (err) {
+    res.status(500).send('Error al obtener rooms');
   }
-  res.json(roomStatus); // Respuesta en formato JSON
 });
 
 // Servir archivos estáticos (opcional)
