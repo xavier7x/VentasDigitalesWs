@@ -1,0 +1,75 @@
+[2025-01-24T18:43:46.956Z] Cliente unido a la room: DEV_movistar
+[2025-01-24T18:44:43.801Z] Cliente unido a la room: DEV_movistar
+[2025-01-24T18:45:44.206Z] Cliente unido a la room: DEV_movistar
+[2025-01-24T19:00:52.255Z] Cliente unido a la room: DEV_movistar
+[2025-01-24T19:01:50.433Z] Cliente unido a la room: DEV_movistar
+[2025-01-24T19:02:11.046Z] Cliente unido a la room: DEV_movistar
+[2025-01-24T19:03:10.950Z] Cliente unido a la room: DEV_movistar
+[2025-01-24T19:11:39.426Z] Cliente unido a la room: DEV_movistar
+[2025-01-24T19:11:39.426Z] Cliente unido a la room: DEV_movistar
+[2025-01-24T19:11:47.790Z] Cliente unido a la room: DEV_movistar
+[2025-01-24T19:11:47.791Z] Cliente unido a la room: DEV_movistar
+[2025-01-24T19:12:25.749Z] Cliente unido a la room: DEV_movistar
+[2025-01-24T19:12:25.749Z] Cliente unido a la room: DEV_movistar
+[2025-01-24T19:19:31.693Z] Cliente unido a la room: DEV_movistar
+[2025-01-24T19:19:31.694Z] Cliente unido a la room: DEV_movistar
+[2025-01-24T19:21:52.825Z] Cliente unido a la room: DEV_movistar
+[2025-01-24T19:21:52.826Z] Cliente unido a la room: DEV_movistar
+[2025-01-24T19:22:36.227Z] Mensaje recibido en DEV_movistar: {"venta_id":"6","estado_nuevo":"comentario","entorno":"DEV_movistar"}
+[2025-01-24T19:22:36.227Z] Actualización de estado de la venta recibida: Venta ID 6, Nuevo Estado comentario
+[2025-01-24T19:22:36.227Z] Mensaje recibido en DEV_movistar: {"venta_id":"6","estado_nuevo":"comentario","entorno":"DEV_movistar"}
+[2025-01-24T19:22:36.227Z] Actualización de estado de la venta recibida: Venta ID 6, Nuevo Estado comentario
+[2025-01-24T19:22:57.397Z] Cliente unido a la room: DEV_movistar
+[2025-01-24T19:22:57.400Z] Cliente unido a la room: DEV_movistar
+[2025-01-24T19:23:01.377Z] Mensaje recibido en DEV_movistar: {"venta_id":"14","estado_nuevo":"comentario","entorno":"DEV_movistar"}
+[2025-01-24T19:23:01.377Z] Actualización de estado de la venta recibida: Venta ID 14, Nuevo Estado comentario
+[2025-01-24T19:23:01.378Z] Mensaje recibido en DEV_movistar: {"venta_id":"14","estado_nuevo":"comentario","entorno":"DEV_movistar"}
+[2025-01-24T19:23:01.378Z] Actualización de estado de la venta recibida: Venta ID 14, Nuevo Estado comentario
+[2025-01-24T19:28:16.120Z] Cliente unido a la room: DEV_movistar
+[2025-01-24T19:28:16.120Z] Cliente unido a la room: DEV_movistar
+[2025-01-24T20:47:33.162Z] Cliente unido a la room: DEV_movistar
+[2025-01-24T20:47:33.162Z] Cliente unido a la room: DEV_movistar
+[2025-01-24T20:47:33.163Z] Actualización de estado de la venta recibida: Venta ID 6, Nuevo Estado NUEVO
+[2025-01-24T20:47:33.163Z] Mensaje recibido en DEV_movistar: {"venta_id":"6","estado_nuevo":"comentario","entorno":"DEV_movistar"}
+[2025-01-24T20:47:33.164Z] Actualización de estado de la venta recibida: Venta ID 6, Nuevo Estado NUEVO
+[2025-01-24T20:47:33.163Z] Mensaje recibido en DEV_movistar: {"venta_id":6,"estado_nuevo":"NUEVO","entorno":"DEV_movistar"}
+[2025-01-24T20:47:33.162Z] Mensaje recibido en DEV_movistar: {"venta_id":"6","estado_nuevo":"comentario","entorno":"DEV_movistar"}
+[2025-01-24T20:47:33.162Z] Actualización de estado de la venta recibida: Venta ID 6, Nuevo Estado comentario
+[2025-01-24T20:47:33.163Z] Actualización de estado de la venta recibida: Venta ID 6, Nuevo Estado comentario
+[2025-01-24T20:47:33.163Z] Mensaje recibido en DEV_movistar: {"venta_id":6,"estado_nuevo":"NUEVO","entorno":"DEV_movistar"}
+[2025-01-24T20:49:49.353Z] Cliente unido a la room: DEV_movistar
+[2025-01-24T20:50:26.286Z] Cliente unido a la room: DEV_movistar
+[2025-01-24T20:50:26.288Z] Cliente unido a la room: DEV_movistar
+[2025-01-24T21:24:30.953Z] Cliente unido a la room: DEV_movistar
+[2025-01-24T21:24:30.953Z] Cliente unido a la room: DEV_movistar
+[2025-01-24T21:29:04.486Z] Mensaje recibido en DEV_movistar: {"venta_id":"6","estado_nuevo":"comentario","entorno":"DEV_movistar"}
+[2025-01-24T21:29:04.486Z] Actualización de estado de la venta recibida: Venta ID 6, Nuevo Estado comentario
+[2025-01-24T21:29:04.487Z] Mensaje recibido en DEV_movistar: {"venta_id":"6","estado_nuevo":"comentario","entorno":"DEV_movistar"}
+[2025-01-24T21:29:04.487Z] Actualización de estado de la venta recibida: Venta ID 6, Nuevo Estado comentario
+[2025-01-24T21:32:26.129Z] Cliente unido a la room: DEV_movistar
+[2025-01-24T21:32:26.129Z] Cliente unido a la room: DEV_movistar
+[2025-01-24T22:13:53.405Z] Cliente unido a la room: DEV_movistar
+[2025-01-24T22:13:53.406Z] Cliente unido a la room: DEV_movistar
+[2025-01-24T22:17:41.775Z] Cliente unido a la room: DEV_movistar
+[2025-01-24T22:17:41.776Z] Cliente unido a la room: DEV_movistar
+[2025-01-24T22:32:48.546Z] Cliente unido a la room: DEV_movistar
+[2025-01-24T22:32:48.546Z] Cliente unido a la room: DEV_movistar
+[2025-01-24T22:33:42.291Z] Cliente unido a la room: DEV_movistar
+[2025-01-24T22:33:42.292Z] Cliente unido a la room: DEV_movistar
+[2025-01-24T22:33:57.965Z] Cliente unido a la room: DEV_movistar
+[2025-01-24T22:33:57.965Z] Cliente unido a la room: DEV_movistar
+[2025-01-25T00:44:39.636Z] Cliente unido a la room: DEV_movistar
+[2025-01-25T00:44:48.664Z] Comentario de la venta recibida: Venta ID 6, Nuevo Estado comentario
+[2025-01-25T00:44:48.663Z] Mensaje recibido en DEV_movistar: {"venta_id":"6","estado_nuevo":"comentario","entorno":"DEV_movistar"}
+[2025-01-25T00:44:58.126Z] Mensaje recibido en DEV_movistar: {"venta_id":6,"estado_nuevo":"POR_AUDITAR","entorno":"DEV_movistar"}
+[2025-01-25T00:44:58.126Z] Actualización de estado de la venta recibida: Venta ID 6, Nuevo Estado POR_AUDITAR
+[2025-01-25T00:47:51.523Z] Cliente unido a la room: DEV_movistar
+[2025-01-25T00:48:03.259Z] Cliente unido a la room: DEV_movistar
+[2025-01-25T00:48:15.049Z] Mensaje recibido en DEV_movistar: {"venta_id":"6","estado_nuevo":"comentario","entorno":"DEV_movistar"}
+[2025-01-25T00:48:15.049Z] Comentario de la venta recibida: Venta ID 6, Nuevo Estado comentario
+[2025-01-25T00:49:17.503Z] Cliente unido a la room: DEV_movistar
+[2025-01-25T00:49:40.443Z] Cliente unido a la room: DEV_movistar
+[2025-01-25T00:49:44.137Z] Cliente unido a la room: DEV_movistar
+[2025-01-25T00:49:53.729Z] Cliente unido a la room: DEV_movistar
+[2025-01-25T00:50:06.687Z] Mensaje recibido en DEV_movistar: {"venta_id":14,"estado_nuevo":"RECHAZADO","entorno":"DEV_movistar"}
+[2025-01-25T00:50:06.687Z] Actualización de estado de la venta recibida: Venta ID 14, Nuevo Estado RECHAZADO

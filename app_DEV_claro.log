@@ -1,0 +1,453 @@
+[2025-01-24T18:44:07.057Z] Cliente unido a la room: DEV_claro
+[2025-01-24T18:45:24.630Z] Cliente unido a la room: DEV_claro
+[2025-01-24T18:48:54.189Z] Cliente unido a la room: DEV_claro
+[2025-01-24T18:48:58.677Z] Cliente unido a la room: DEV_claro
+[2025-01-24T18:56:27.134Z] Cliente unido a la room: DEV_claro
+[2025-01-24T18:56:38.135Z] Cliente unido a la room: DEV_claro
+[2025-01-24T18:56:42.462Z] Mensaje recibido en DEV_claro: {"venta_id":"8","estado_nuevo":"comentario","entorno":"DEV_claro"}
+[2025-01-24T18:56:42.463Z] Actualización de estado de la venta recibida: Venta ID 8, Nuevo Estado comentario
+[2025-01-24T19:00:44.747Z] Cliente unido a la room: DEV_claro
+[2025-01-24T19:01:32.457Z] Cliente unido a la room: DEV_claro
+[2025-01-24T19:02:00.000Z] Cliente unido a la room: DEV_claro
+[2025-01-24T19:02:34.279Z] Cliente unido a la room: DEV_claro
+[2025-01-24T19:04:09.866Z] Mensaje recibido en DEV_claro: {"venta_id":"8","estado_nuevo":"comentario","entorno":"DEV_claro"}
+[2025-01-24T19:04:09.866Z] Actualización de estado de la venta recibida: Venta ID 8, Nuevo Estado comentario
+[2025-01-24T19:04:21.426Z] Mensaje recibido en DEV_claro: {"venta_id":"9","estado_nuevo":"comentario","entorno":"DEV_claro"}
+[2025-01-24T19:04:21.426Z] Actualización de estado de la venta recibida: Venta ID 9, Nuevo Estado comentario
+[2025-01-24T19:05:15.703Z] Mensaje recibido en DEV_claro: {"venta_id":"29","estado_nuevo":"POR_INGRESAR","entorno":"DEV_claro"}
+[2025-01-24T19:05:15.704Z] Actualización de estado de la venta recibida: Venta ID 29, Nuevo Estado POR_INGRESAR
+[2025-01-24T19:11:16.579Z] Cliente unido a la room: DEV_claro
+[2025-01-24T19:11:16.584Z] Cliente unido a la room: DEV_claro
+[2025-01-24T19:12:07.220Z] Cliente unido a la room: DEV_claro
+[2025-01-24T19:12:07.221Z] Cliente unido a la room: DEV_claro
+[2025-01-24T19:12:47.523Z] Cliente unido a la room: DEV_claro
+[2025-01-24T19:12:47.523Z] Cliente unido a la room: DEV_claro
+[2025-01-24T19:12:53.929Z] Mensaje recibido en DEV_claro: {"venta_id":"8","estado_nuevo":"comentario","entorno":"DEV_claro"}
+[2025-01-24T19:12:53.929Z] Actualización de estado de la venta recibida: Venta ID 8, Nuevo Estado comentario
+[2025-01-24T19:12:53.929Z] Mensaje recibido en DEV_claro: {"venta_id":"8","estado_nuevo":"comentario","entorno":"DEV_claro"}
+[2025-01-24T19:12:53.929Z] Actualización de estado de la venta recibida: Venta ID 8, Nuevo Estado comentario
+[2025-01-24T19:13:34.353Z] Mensaje recibido en DEV_claro: {"venta_id":"13","estado_nuevo":"comentario","entorno":"DEV_claro"}
+[2025-01-24T19:13:34.353Z] Actualización de estado de la venta recibida: Venta ID 13, Nuevo Estado comentario
+[2025-01-24T19:13:34.353Z] Mensaje recibido en DEV_claro: {"venta_id":"13","estado_nuevo":"comentario","entorno":"DEV_claro"}
+[2025-01-24T19:13:34.353Z] Actualización de estado de la venta recibida: Venta ID 13, Nuevo Estado comentario
+[2025-01-24T19:19:06.421Z] Cliente unido a la room: DEV_claro
+[2025-01-24T19:19:06.433Z] Cliente unido a la room: DEV_claro
+[2025-01-24T19:19:19.631Z] Cliente unido a la room: DEV_claro
+[2025-01-24T19:19:19.631Z] Cliente unido a la room: DEV_claro
+[2025-01-24T19:19:40.943Z] Cliente unido a la room: DEV_claro
+[2025-01-24T19:19:40.943Z] Cliente unido a la room: DEV_claro
+[2025-01-24T19:20:06.076Z] Mensaje recibido en DEV_claro: {"venta_id":8,"estado_nuevo":"NUEVO","entorno":"DEV_claro"}
+[2025-01-24T19:20:06.076Z] Actualización de estado de la venta recibida: Venta ID 8, Nuevo Estado NUEVO
+[2025-01-24T19:20:06.077Z] Mensaje recibido en DEV_claro: {"venta_id":8,"estado_nuevo":"NUEVO","entorno":"DEV_claro"}
+[2025-01-24T19:20:06.077Z] Actualización de estado de la venta recibida: Venta ID 8, Nuevo Estado NUEVO
+[2025-01-24T19:21:04.861Z] Mensaje recibido en DEV_claro: {"venta_id":"8","estado_nuevo":"POR_INGRESAR","entorno":"DEV_claro"}
+[2025-01-24T19:21:04.861Z] Mensaje recibido en DEV_claro: {"venta_id":"8","estado_nuevo":"POR_INGRESAR","entorno":"DEV_claro"}
+[2025-01-24T19:21:04.861Z] Actualización de estado de la venta recibida: Venta ID 8, Nuevo Estado POR_INGRESAR
+[2025-01-24T19:21:04.861Z] Actualización de estado de la venta recibida: Venta ID 8, Nuevo Estado POR_INGRESAR
+[2025-01-24T19:22:00.021Z] Mensaje recibido en DEV_claro: {"venta_id":"13","estado_nuevo":"comentario","entorno":"DEV_claro"}
+[2025-01-24T19:22:00.022Z] Actualización de estado de la venta recibida: Venta ID 13, Nuevo Estado comentario
+[2025-01-24T19:22:00.022Z] Mensaje recibido en DEV_claro: {"venta_id":"13","estado_nuevo":"comentario","entorno":"DEV_claro"}
+[2025-01-24T19:22:00.022Z] Actualización de estado de la venta recibida: Venta ID 13, Nuevo Estado comentario
+[2025-01-24T19:22:53.311Z] Cliente unido a la room: DEV_claro
+[2025-01-24T19:22:53.312Z] Cliente unido a la room: DEV_claro
+[2025-01-24T19:26:28.606Z] Cliente unido a la room: DEV_claro
+[2025-01-24T19:28:30.784Z] Cliente unido a la room: DEV_claro
+[2025-01-24T19:28:30.785Z] Cliente unido a la room: DEV_claro
+[2025-01-24T19:28:36.407Z] Cliente unido a la room: DEV_claro
+[2025-01-24T19:28:36.418Z] Cliente unido a la room: DEV_claro
+[2025-01-24T19:28:41.035Z] Mensaje recibido en DEV_claro: {"venta_id":8,"estado_nuevo":"NUEVO","entorno":"DEV_claro"}
+[2025-01-24T19:28:41.036Z] Actualización de estado de la venta recibida: Venta ID 8, Nuevo Estado NUEVO
+[2025-01-24T19:28:41.036Z] Mensaje recibido en DEV_claro: {"venta_id":8,"estado_nuevo":"NUEVO","entorno":"DEV_claro"}
+[2025-01-24T19:28:41.036Z] Actualización de estado de la venta recibida: Venta ID 8, Nuevo Estado NUEVO
+[2025-01-24T19:29:01.077Z] Cliente unido a la room: DEV_claro
+[2025-01-24T19:29:01.087Z] Cliente unido a la room: DEV_claro
+[2025-01-24T19:29:05.239Z] Cliente unido a la room: DEV_claro
+[2025-01-24T19:29:05.239Z] Cliente unido a la room: DEV_claro
+[2025-01-24T19:29:09.224Z] Mensaje recibido en DEV_claro: {"venta_id":"8","estado_nuevo":"comentario","entorno":"DEV_claro"}
+[2025-01-24T19:29:09.224Z] Actualización de estado de la venta recibida: Venta ID 8, Nuevo Estado comentario
+[2025-01-24T19:29:09.225Z] Mensaje recibido en DEV_claro: {"venta_id":"8","estado_nuevo":"comentario","entorno":"DEV_claro"}
+[2025-01-24T19:29:09.225Z] Actualización de estado de la venta recibida: Venta ID 8, Nuevo Estado comentario
+[2025-01-24T19:30:23.330Z] Mensaje recibido en DEV_claro: {"venta_id":"8","estado_nuevo":"comentario","entorno":"DEV_claro"}
+[2025-01-24T19:30:23.330Z] Actualización de estado de la venta recibida: Venta ID 8, Nuevo Estado comentario
+[2025-01-24T19:30:23.330Z] Mensaje recibido en DEV_claro: {"venta_id":"8","estado_nuevo":"comentario","entorno":"DEV_claro"}
+[2025-01-24T19:30:23.331Z] Actualización de estado de la venta recibida: Venta ID 8, Nuevo Estado comentario
+[2025-01-24T19:30:33.981Z] Cliente unido a la room: DEV_claro
+[2025-01-24T19:30:33.994Z] Cliente unido a la room: DEV_claro
+[2025-01-24T19:30:58.009Z] Cliente unido a la room: DEV_claro
+[2025-01-24T19:30:58.010Z] Cliente unido a la room: DEV_claro
+[2025-01-24T19:31:07.771Z] Mensaje recibido en DEV_claro: {"venta_id":"8","estado_nuevo":"comentario","entorno":"DEV_claro"}
+[2025-01-24T19:31:07.771Z] Actualización de estado de la venta recibida: Venta ID 8, Nuevo Estado comentario
+[2025-01-24T19:31:07.771Z] Mensaje recibido en DEV_claro: {"venta_id":"8","estado_nuevo":"comentario","entorno":"DEV_claro"}
+[2025-01-24T19:31:07.771Z] Actualización de estado de la venta recibida: Venta ID 8, Nuevo Estado comentario
+[2025-01-24T19:33:18.029Z] Cliente unido a la room: DEV_claro
+[2025-01-24T19:33:18.029Z] Cliente unido a la room: DEV_claro
+[2025-01-24T19:33:25.386Z] Cliente unido a la room: DEV_claro
+[2025-01-24T19:33:25.386Z] Cliente unido a la room: DEV_claro
+[2025-01-24T19:33:28.189Z] Cliente unido a la room: DEV_claro
+[2025-01-24T19:33:28.192Z] Cliente unido a la room: DEV_claro
+[2025-01-24T19:33:38.090Z] Mensaje recibido en DEV_claro: {"venta_id":"8","estado_nuevo":"POR_INGRESAR","entorno":"DEV_claro"}
+[2025-01-24T19:33:38.090Z] Mensaje recibido en DEV_claro: {"venta_id":"8","estado_nuevo":"POR_INGRESAR","entorno":"DEV_claro"}
+[2025-01-24T19:33:38.090Z] Actualización de estado de la venta recibida: Venta ID 8, Nuevo Estado POR_INGRESAR
+[2025-01-24T19:33:38.090Z] Actualización de estado de la venta recibida: Venta ID 8, Nuevo Estado POR_INGRESAR
+[2025-01-24T19:34:27.176Z] Mensaje recibido en DEV_claro: {"venta_id":"8","estado_nuevo":"comentario","entorno":"DEV_claro"}
+[2025-01-24T19:34:27.176Z] Actualización de estado de la venta recibida: Venta ID 8, Nuevo Estado comentario
+[2025-01-24T19:34:27.177Z] Mensaje recibido en DEV_claro: {"venta_id":"8","estado_nuevo":"comentario","entorno":"DEV_claro"}
+[2025-01-24T19:34:27.177Z] Actualización de estado de la venta recibida: Venta ID 8, Nuevo Estado comentario
+[2025-01-24T19:34:53.050Z] Cliente unido a la room: DEV_claro
+[2025-01-24T19:34:53.050Z] Cliente unido a la room: DEV_claro
+[2025-01-24T19:34:57.622Z] Mensaje recibido en DEV_claro: {"venta_id":"8","estado_nuevo":"comentario","entorno":"DEV_claro"}
+[2025-01-24T19:34:57.622Z] Actualización de estado de la venta recibida: Venta ID 8, Nuevo Estado comentario
+[2025-01-24T19:34:57.622Z] Mensaje recibido en DEV_claro: {"venta_id":"8","estado_nuevo":"comentario","entorno":"DEV_claro"}
+[2025-01-24T19:34:57.622Z] Actualización de estado de la venta recibida: Venta ID 8, Nuevo Estado comentario
+[2025-01-24T19:35:25.205Z] Mensaje recibido en DEV_claro: {"venta_id":"8","estado_nuevo":"comentario","entorno":"DEV_claro"}
+[2025-01-24T19:35:25.206Z] Mensaje recibido en DEV_claro: {"venta_id":"8","estado_nuevo":"comentario","entorno":"DEV_claro"}
+[2025-01-24T19:35:25.206Z] Actualización de estado de la venta recibida: Venta ID 8, Nuevo Estado comentario
+[2025-01-24T19:35:25.206Z] Actualización de estado de la venta recibida: Venta ID 8, Nuevo Estado comentario
+[2025-01-24T19:37:59.822Z] Cliente unido a la room: DEV_claro
+[2025-01-24T19:37:59.824Z] Cliente unido a la room: DEV_claro
+[2025-01-24T19:38:13.298Z] Cliente unido a la room: DEV_claro
+[2025-01-24T19:38:13.298Z] Cliente unido a la room: DEV_claro
+[2025-01-24T19:38:21.044Z] Mensaje recibido en DEV_claro: {"venta_id":8,"estado_nuevo":"NUEVO","entorno":"DEV_claro"}
+[2025-01-24T19:38:21.044Z] Actualización de estado de la venta recibida: Venta ID 8, Nuevo Estado NUEVO
+[2025-01-24T19:38:21.044Z] Mensaje recibido en DEV_claro: {"venta_id":8,"estado_nuevo":"NUEVO","entorno":"DEV_claro"}
+[2025-01-24T19:38:21.044Z] Actualización de estado de la venta recibida: Venta ID 8, Nuevo Estado NUEVO
+[2025-01-24T19:52:06.842Z] Cliente unido a la room: DEV_claro
+[2025-01-24T19:52:06.843Z] Cliente unido a la room: DEV_claro
+[2025-01-24T19:52:11.573Z] Mensaje recibido en DEV_claro: {"venta_id":"8","estado_nuevo":"comentario","entorno":"DEV_claro"}
+[2025-01-24T19:52:11.573Z] Mensaje recibido en DEV_claro: {"venta_id":"8","estado_nuevo":"comentario","entorno":"DEV_claro"}
+[2025-01-24T19:52:11.573Z] Actualización de estado de la venta recibida: Venta ID 8, Nuevo Estado comentario
+[2025-01-24T19:52:11.574Z] Actualización de estado de la venta recibida: Venta ID 8, Nuevo Estado comentario
+[2025-01-24T19:54:02.030Z] Cliente unido a la room: DEV_claro
+[2025-01-24T19:54:02.033Z] Cliente unido a la room: DEV_claro
+[2025-01-24T19:54:06.618Z] Mensaje recibido en DEV_claro: {"venta_id":"8","estado_nuevo":"comentario","entorno":"DEV_claro"}
+[2025-01-24T19:54:06.618Z] Actualización de estado de la venta recibida: Venta ID 8, Nuevo Estado comentario
+[2025-01-24T19:54:06.618Z] Mensaje recibido en DEV_claro: {"venta_id":"8","estado_nuevo":"comentario","entorno":"DEV_claro"}
+[2025-01-24T19:54:06.619Z] Actualización de estado de la venta recibida: Venta ID 8, Nuevo Estado comentario
+[2025-01-24T19:54:46.942Z] Mensaje recibido en DEV_claro: {"venta_id":"8","estado_nuevo":"comentario","entorno":"DEV_claro"}
+[2025-01-24T19:54:46.942Z] Actualización de estado de la venta recibida: Venta ID 8, Nuevo Estado comentario
+[2025-01-24T19:54:46.943Z] Mensaje recibido en DEV_claro: {"venta_id":"8","estado_nuevo":"comentario","entorno":"DEV_claro"}
+[2025-01-24T19:54:46.943Z] Actualización de estado de la venta recibida: Venta ID 8, Nuevo Estado comentario
+[2025-01-24T19:55:26.751Z] Cliente unido a la room: DEV_claro
+[2025-01-24T19:58:31.199Z] Cliente unido a la room: DEV_claro
+[2025-01-24T19:59:07.164Z] Cliente unido a la room: DEV_claro
+[2025-01-24T19:59:07.175Z] Cliente unido a la room: DEV_claro
+[2025-01-24T19:59:25.479Z] Cliente unido a la room: DEV_claro
+[2025-01-24T19:59:25.479Z] Cliente unido a la room: DEV_claro
+[2025-01-24T20:04:58.791Z] Cliente unido a la room: DEV_claro
+[2025-01-24T20:04:58.801Z] Cliente unido a la room: DEV_claro
+[2025-01-24T20:07:59.305Z] Cliente unido a la room: DEV_claro
+[2025-01-24T20:07:59.306Z] Cliente unido a la room: DEV_claro
+[2025-01-24T20:08:08.242Z] Cliente unido a la room: DEV_claro
+[2025-01-24T20:08:08.242Z] Cliente unido a la room: DEV_claro
+[2025-01-24T20:08:38.054Z] Cliente unido a la room: DEV_claro
+[2025-01-24T20:08:38.054Z] Cliente unido a la room: DEV_claro
+[2025-01-24T20:10:15.482Z] Cliente unido a la room: DEV_claro
+[2025-01-24T20:10:15.482Z] Cliente unido a la room: DEV_claro
+[2025-01-24T20:14:34.540Z] Cliente unido a la room: DEV_claro
+[2025-01-24T20:14:34.540Z] Cliente unido a la room: DEV_claro
+[2025-01-24T20:14:51.569Z] Cliente unido a la room: DEV_claro
+[2025-01-24T20:14:51.570Z] Cliente unido a la room: DEV_claro
+[2025-01-24T20:20:18.637Z] Cliente unido a la room: DEV_claro
+[2025-01-24T20:20:18.637Z] Cliente unido a la room: DEV_claro
+[2025-01-24T20:20:29.517Z] Cliente unido a la room: DEV_claro
+[2025-01-24T20:20:29.517Z] Cliente unido a la room: DEV_claro
+[2025-01-24T20:23:41.734Z] Cliente unido a la room: DEV_claro
+[2025-01-24T20:23:41.734Z] Cliente unido a la room: DEV_claro
+[2025-01-24T20:24:13.802Z] Cliente unido a la room: DEV_claro
+[2025-01-24T20:24:13.802Z] Cliente unido a la room: DEV_claro
+[2025-01-24T20:26:46.075Z] Cliente unido a la room: DEV_claro
+[2025-01-24T20:26:46.075Z] Cliente unido a la room: DEV_claro
+[2025-01-24T20:27:03.810Z] Cliente unido a la room: DEV_claro
+[2025-01-24T20:27:03.811Z] Cliente unido a la room: DEV_claro
+[2025-01-24T20:27:54.138Z] Actualización de estado de la venta recibida: Venta ID 8, Nuevo Estado POR_INGRESAR
+[2025-01-24T20:27:54.138Z] Mensaje recibido en DEV_claro: {"venta_id":"8","estado_nuevo":"POR_INGRESAR","entorno":"DEV_claro"}
+[2025-01-24T20:27:54.139Z] Mensaje recibido en DEV_claro: {"venta_id":"8","estado_nuevo":"POR_INGRESAR","entorno":"DEV_claro"}
+[2025-01-24T20:27:54.139Z] Actualización de estado de la venta recibida: Venta ID 8, Nuevo Estado POR_INGRESAR
+[2025-01-24T20:30:45.630Z] Cliente unido a la room: DEV_claro
+[2025-01-24T20:30:46.445Z] Cliente unido a la room: DEV_claro
+[2025-01-24T20:47:12.583Z] Cliente unido a la room: DEV_claro
+[2025-01-24T20:47:13.703Z] Cliente unido a la room: DEV_claro
+[2025-01-24T20:48:07.064Z] Cliente unido a la room: DEV_claro
+[2025-01-24T20:48:14.010Z] Cliente unido a la room: DEV_claro
+[2025-01-24T20:48:14.106Z] Cliente unido a la room: DEV_claro
+[2025-01-24T20:50:00.429Z] Cliente unido a la room: DEV_claro
+[2025-01-24T20:50:00.429Z] Cliente unido a la room: DEV_claro
+[2025-01-24T20:50:43.317Z] Cliente unido a la room: DEV_claro
+[2025-01-24T20:50:43.356Z] Cliente unido a la room: DEV_claro
+[2025-01-24T20:50:51.348Z] Mensaje recibido en DEV_claro: {"venta_id":"8","estado_nuevo":"comentario","entorno":"DEV_claro"}
+[2025-01-24T20:50:51.348Z] Comentario de la venta recibida: Venta ID 8, Nuevo Estado comentario
+[2025-01-24T20:50:51.349Z] Mensaje recibido en DEV_claro: {"venta_id":"8","estado_nuevo":"comentario","entorno":"DEV_claro"}
+[2025-01-24T20:50:51.349Z] Comentario de la venta recibida: Venta ID 8, Nuevo Estado comentario
+[2025-01-24T20:51:15.192Z] Mensaje recibido en DEV_claro: {"venta_id":8,"estado_nuevo":"NUEVO","entorno":"DEV_claro"}
+[2025-01-24T20:51:15.192Z] Actualización de estado de la venta recibida: Venta ID 8, Nuevo Estado NUEVO
+[2025-01-24T20:51:15.192Z] Mensaje recibido en DEV_claro: {"venta_id":8,"estado_nuevo":"NUEVO","entorno":"DEV_claro"}
+[2025-01-24T20:51:15.192Z] Actualización de estado de la venta recibida: Venta ID 8, Nuevo Estado NUEVO
+[2025-01-24T20:52:35.834Z] Cliente unido a la room: DEV_claro
+[2025-01-24T20:52:35.835Z] Cliente unido a la room: DEV_claro
+[2025-01-24T20:52:41.715Z] Mensaje recibido en DEV_claro: {"venta_id":"8","estado_nuevo":"POR_INGRESAR","entorno":"DEV_claro"}
+[2025-01-24T20:52:41.715Z] Actualización de estado de la venta recibida: Venta ID 8, Nuevo Estado POR_INGRESAR
+[2025-01-24T20:52:41.716Z] Mensaje recibido en DEV_claro: {"venta_id":"8","estado_nuevo":"POR_INGRESAR","entorno":"DEV_claro"}
+[2025-01-24T20:52:41.716Z] Actualización de estado de la venta recibida: Venta ID 8, Nuevo Estado POR_INGRESAR
+[2025-01-24T20:53:49.471Z] Cliente unido a la room: DEV_claro
+[2025-01-24T20:53:49.471Z] Cliente unido a la room: DEV_claro
+[2025-01-24T20:53:53.450Z] Mensaje recibido en DEV_claro: {"venta_id":"8","estado_nuevo":"comentario","entorno":"DEV_claro"}
+[2025-01-24T20:53:53.450Z] Comentario de la venta recibida: Venta ID 8, Nuevo Estado comentario
+[2025-01-24T20:53:53.450Z] Mensaje recibido en DEV_claro: {"venta_id":"8","estado_nuevo":"comentario","entorno":"DEV_claro"}
+[2025-01-24T20:53:53.450Z] Comentario de la venta recibida: Venta ID 8, Nuevo Estado comentario
+[2025-01-24T21:15:31.401Z] Cliente unido a la room: DEV_claro
+[2025-01-24T21:15:31.401Z] Cliente unido a la room: DEV_claro
+[2025-01-24T21:15:44.547Z] Cliente unido a la room: DEV_claro
+[2025-01-24T21:15:56.390Z] Cliente unido a la room: DEV_claro
+[2025-01-24T21:15:59.623Z] Mensaje recibido en DEV_claro: {"venta_id":"8","estado_nuevo":"comentario","entorno":"DEV_claro"}
+[2025-01-24T21:15:59.623Z] Comentario de la venta recibida: Venta ID 8, Nuevo Estado comentario
+[2025-01-24T21:16:53.073Z] Mensaje recibido en DEV_claro: {"venta_id":8,"estado_nuevo":"NUEVO","entorno":"DEV_claro"}
+[2025-01-24T21:16:53.073Z] Actualización de estado de la venta recibida: Venta ID 8, Nuevo Estado NUEVO
+[2025-01-24T21:17:10.926Z] Cliente unido a la room: DEV_claro
+[2025-01-24T21:22:53.841Z] Cliente unido a la room: DEV_claro
+[2025-01-24T21:23:05.002Z] Cliente unido a la room: DEV_claro
+[2025-01-24T21:23:10.469Z] Mensaje recibido en DEV_claro: {"venta_id":"8","estado_nuevo":"comentario","entorno":"DEV_claro"}
+[2025-01-24T21:23:10.469Z] Comentario de la venta recibida: Venta ID 8, Nuevo Estado comentario
+[2025-01-24T21:24:13.791Z] Mensaje recibido en DEV_claro: {"venta_id":"8","estado_nuevo":"POR_INGRESAR","entorno":"DEV_claro"}
+[2025-01-24T21:24:13.791Z] Actualización de estado de la venta recibida: Venta ID 8, Nuevo Estado POR_INGRESAR
+[2025-01-24T21:24:36.499Z] Mensaje recibido en DEV_claro: {"venta_id":"9","estado_nuevo":"comentario","entorno":"DEV_claro"}
+[2025-01-24T21:24:36.500Z] Comentario de la venta recibida: Venta ID 9, Nuevo Estado comentario
+[2025-01-24T21:28:07.946Z] Cliente unido a la room: DEV_claro
+[2025-01-24T21:28:08.347Z] Cliente unido a la room: DEV_claro
+[2025-01-24T22:07:06.575Z] Cliente unido a la room: DEV_claro
+[2025-01-24T22:07:06.575Z] Cliente unido a la room: DEV_claro
+[2025-01-24T22:07:42.125Z] Cliente unido a la room: DEV_claro
+[2025-01-24T22:07:42.125Z] Cliente unido a la room: DEV_claro
+[2025-01-24T22:12:58.125Z] Cliente unido a la room: DEV_claro
+[2025-01-24T22:12:58.131Z] Cliente unido a la room: DEV_claro
+[2025-01-24T22:13:04.175Z] Mensaje recibido en DEV_claro: {"venta_id":"8","estado_nuevo":"comentario","entorno":"DEV_claro"}
+[2025-01-24T22:13:04.175Z] Comentario de la venta recibida: Venta ID 8, Nuevo Estado comentario
+[2025-01-24T22:13:04.175Z] Mensaje recibido en DEV_claro: {"venta_id":"8","estado_nuevo":"comentario","entorno":"DEV_claro"}
+[2025-01-24T22:13:04.175Z] Comentario de la venta recibida: Venta ID 8, Nuevo Estado comentario
+[2025-01-24T22:14:01.407Z] Cliente unido a la room: DEV_claro
+[2025-01-24T22:14:01.409Z] Cliente unido a la room: DEV_claro
+[2025-01-24T22:14:08.492Z] Mensaje recibido en DEV_claro: {"venta_id":8,"estado_nuevo":"NUEVO","entorno":"DEV_claro"}
+[2025-01-24T22:14:08.492Z] Actualización de estado de la venta recibida: Venta ID 8, Nuevo Estado NUEVO
+[2025-01-24T22:14:08.493Z] Mensaje recibido en DEV_claro: {"venta_id":8,"estado_nuevo":"NUEVO","entorno":"DEV_claro"}
+[2025-01-24T22:14:08.493Z] Actualización de estado de la venta recibida: Venta ID 8, Nuevo Estado NUEVO
+[2025-01-24T22:17:47.767Z] Cliente unido a la room: DEV_claro
+[2025-01-24T22:17:47.767Z] Cliente unido a la room: DEV_claro
+[2025-01-24T22:17:51.705Z] Mensaje recibido en DEV_claro: {"venta_id":"8","estado_nuevo":"comentario","entorno":"DEV_claro"}
+[2025-01-24T22:17:51.705Z] Comentario de la venta recibida: Venta ID 8, Nuevo Estado comentario
+[2025-01-24T22:17:51.705Z] Mensaje recibido en DEV_claro: {"venta_id":"8","estado_nuevo":"comentario","entorno":"DEV_claro"}
+[2025-01-24T22:17:51.705Z] Comentario de la venta recibida: Venta ID 8, Nuevo Estado comentario
+[2025-01-24T22:18:17.827Z] Mensaje recibido en DEV_claro: {"venta_id":9,"estado_nuevo":"NUEVO","entorno":"DEV_claro"}
+[2025-01-24T22:18:17.827Z] Actualización de estado de la venta recibida: Venta ID 9, Nuevo Estado NUEVO
+[2025-01-24T22:18:17.828Z] Mensaje recibido en DEV_claro: {"venta_id":9,"estado_nuevo":"NUEVO","entorno":"DEV_claro"}
+[2025-01-24T22:18:17.828Z] Actualización de estado de la venta recibida: Venta ID 9, Nuevo Estado NUEVO
+[2025-01-24T22:24:46.219Z] Cliente unido a la room: DEV_claro
+[2025-01-24T22:24:46.222Z] Cliente unido a la room: DEV_claro
+[2025-01-24T22:24:47.838Z] Cliente unido a la room: DEV_claro
+[2025-01-24T22:25:33.009Z] Cliente unido a la room: DEV_claro
+[2025-01-24T22:25:33.012Z] Cliente unido a la room: DEV_claro
+[2025-01-24T22:25:52.436Z] Cliente unido a la room: DEV_claro
+[2025-01-24T22:25:52.446Z] Cliente unido a la room: DEV_claro
+[2025-01-24T22:25:54.055Z] Mensaje recibido en DEV_claro: {"venta_id":"8","estado_nuevo":"comentario","entorno":"DEV_claro"}
+[2025-01-24T22:25:54.055Z] Comentario de la venta recibida: Venta ID 8, Nuevo Estado comentario
+[2025-01-24T22:25:54.055Z] Mensaje recibido en DEV_claro: {"venta_id":"8","estado_nuevo":"comentario","entorno":"DEV_claro"}
+[2025-01-24T22:25:54.055Z] Comentario de la venta recibida: Venta ID 8, Nuevo Estado comentario
+[2025-01-24T22:26:33.745Z] Mensaje recibido en DEV_claro: {"venta_id":"8","estado_nuevo":"POR_INGRESAR","entorno":"DEV_claro"}
+[2025-01-24T22:26:33.745Z] Actualización de estado de la venta recibida: Venta ID 8, Nuevo Estado POR_INGRESAR
+[2025-01-24T22:26:33.745Z] Mensaje recibido en DEV_claro: {"venta_id":"8","estado_nuevo":"POR_INGRESAR","entorno":"DEV_claro"}
+[2025-01-24T22:26:33.745Z] Actualización de estado de la venta recibida: Venta ID 8, Nuevo Estado POR_INGRESAR
+[2025-01-24T22:27:19.675Z] Cliente unido a la room: DEV_claro
+[2025-01-24T22:27:19.691Z] Cliente unido a la room: DEV_claro
+[2025-01-24T22:27:24.667Z] Cliente unido a la room: DEV_claro
+[2025-01-24T22:27:24.668Z] Cliente unido a la room: DEV_claro
+[2025-01-24T22:27:29.225Z] Mensaje recibido en DEV_claro: {"venta_id":"9","estado_nuevo":"POR_INGRESAR","entorno":"DEV_claro"}
+[2025-01-24T22:27:29.225Z] Actualización de estado de la venta recibida: Venta ID 9, Nuevo Estado POR_INGRESAR
+[2025-01-24T22:27:29.225Z] Mensaje recibido en DEV_claro: {"venta_id":"9","estado_nuevo":"POR_INGRESAR","entorno":"DEV_claro"}
+[2025-01-24T22:27:29.225Z] Actualización de estado de la venta recibida: Venta ID 9, Nuevo Estado POR_INGRESAR
+[2025-01-24T22:29:33.551Z] Cliente unido a la room: DEV_claro
+[2025-01-24T22:29:33.554Z] Cliente unido a la room: DEV_claro
+[2025-01-24T22:30:07.809Z] Cliente unido a la room: DEV_claro
+[2025-01-24T22:30:07.812Z] Cliente unido a la room: DEV_claro
+[2025-01-24T22:30:58.371Z] Cliente unido a la room: DEV_claro
+[2025-01-24T22:30:58.372Z] Cliente unido a la room: DEV_claro
+[2025-01-24T22:31:50.278Z] Cliente unido a la room: DEV_claro
+[2025-01-24T22:31:50.279Z] Cliente unido a la room: DEV_claro
+[2025-01-24T22:32:04.511Z] Mensaje recibido en DEV_claro: {"venta_id":"8","estado_nuevo":"comentario","entorno":"DEV_claro"}
+[2025-01-24T22:32:04.511Z] Comentario de la venta recibida: Venta ID 8, Nuevo Estado comentario
+[2025-01-24T22:32:04.511Z] Mensaje recibido en DEV_claro: {"venta_id":"8","estado_nuevo":"comentario","entorno":"DEV_claro"}
+[2025-01-24T22:32:04.511Z] Comentario de la venta recibida: Venta ID 8, Nuevo Estado comentario
+[2025-01-24T22:32:30.058Z] Cliente unido a la room: DEV_claro
+[2025-01-24T22:32:30.058Z] Cliente unido a la room: DEV_claro
+[2025-01-24T22:33:23.036Z] Cliente unido a la room: DEV_claro
+[2025-01-24T22:33:23.036Z] Cliente unido a la room: DEV_claro
+[2025-01-24T22:34:14.552Z] Cliente unido a la room: DEV_claro
+[2025-01-24T22:34:14.552Z] Cliente unido a la room: DEV_claro
+[2025-01-24T22:34:16.674Z] Cliente unido a la room: DEV_claro
+[2025-01-24T22:34:16.674Z] Cliente unido a la room: DEV_claro
+[2025-01-24T22:37:45.259Z] Cliente unido a la room: DEV_claro
+[2025-01-24T22:37:45.260Z] Cliente unido a la room: DEV_claro
+[2025-01-24T22:37:53.488Z] Mensaje recibido en DEV_claro: {"venta_id":"8","estado_nuevo":"comentario","entorno":"DEV_claro"}
+[2025-01-24T22:37:53.488Z] Comentario de la venta recibida: Venta ID 8, Nuevo Estado comentario
+[2025-01-24T22:37:53.488Z] Mensaje recibido en DEV_claro: {"venta_id":"8","estado_nuevo":"comentario","entorno":"DEV_claro"}
+[2025-01-24T22:37:53.489Z] Comentario de la venta recibida: Venta ID 8, Nuevo Estado comentario
+[2025-01-24T22:39:33.864Z] Cliente unido a la room: DEV_claro
+[2025-01-24T22:39:33.865Z] Cliente unido a la room: DEV_claro
+[2025-01-24T22:39:35.888Z] Cliente unido a la room: DEV_claro
+[2025-01-24T22:39:35.888Z] Cliente unido a la room: DEV_claro
+[2025-01-24T22:39:43.060Z] Mensaje recibido en DEV_claro: {"venta_id":"8","estado_nuevo":"comentario","entorno":"DEV_claro"}
+[2025-01-24T22:39:43.061Z] Comentario de la venta recibida: Venta ID 8, Nuevo Estado comentario
+[2025-01-24T22:39:43.061Z] Comentario de la venta recibida: Venta ID 8, Nuevo Estado comentario
+[2025-01-24T22:39:43.061Z] Mensaje recibido en DEV_claro: {"venta_id":"8","estado_nuevo":"comentario","entorno":"DEV_claro"}
+[2025-01-24T22:39:59.723Z] Cliente unido a la room: DEV_claro
+[2025-01-24T22:39:59.724Z] Cliente unido a la room: DEV_claro
+[2025-01-24T22:40:04.762Z] Mensaje recibido en DEV_claro: {"venta_id":"8","estado_nuevo":"comentario","entorno":"DEV_claro"}
+[2025-01-24T22:40:04.762Z] Comentario de la venta recibida: Venta ID 8, Nuevo Estado comentario
+[2025-01-24T22:40:04.762Z] Mensaje recibido en DEV_claro: {"venta_id":"8","estado_nuevo":"comentario","entorno":"DEV_claro"}
+[2025-01-24T22:40:04.762Z] Comentario de la venta recibida: Venta ID 8, Nuevo Estado comentario
+[2025-01-24T22:44:59.733Z] Cliente unido a la room: DEV_claro
+[2025-01-24T22:44:59.733Z] Cliente unido a la room: DEV_claro
+[2025-01-24T22:45:05.838Z] Mensaje recibido en DEV_claro: {"venta_id":"8","estado_nuevo":"comentario","entorno":"DEV_claro"}
+[2025-01-24T22:45:05.838Z] Comentario de la venta recibida: Venta ID 8, Nuevo Estado comentario
+[2025-01-24T22:45:05.839Z] Mensaje recibido en DEV_claro: {"venta_id":"8","estado_nuevo":"comentario","entorno":"DEV_claro"}
+[2025-01-24T22:45:05.839Z] Comentario de la venta recibida: Venta ID 8, Nuevo Estado comentario
+[2025-01-24T22:48:24.451Z] Cliente unido a la room: DEV_claro
+[2025-01-24T22:48:24.452Z] Cliente unido a la room: DEV_claro
+[2025-01-24T22:48:35.889Z] Mensaje recibido en DEV_claro: {"venta_id":"8","estado_nuevo":"comentario","entorno":"DEV_claro"}
+[2025-01-24T22:48:35.890Z] Mensaje recibido en DEV_claro: {"venta_id":"8","estado_nuevo":"comentario","entorno":"DEV_claro"}
+[2025-01-24T22:48:35.890Z] Comentario de la venta recibida: Venta ID 8, Nuevo Estado comentario
+[2025-01-24T22:48:35.890Z] Comentario de la venta recibida: Venta ID 8, Nuevo Estado comentario
+[2025-01-24T22:50:07.423Z] Cliente unido a la room: DEV_claro
+[2025-01-24T22:50:07.422Z] Cliente unido a la room: DEV_claro
+[2025-01-24T22:50:23.163Z] Mensaje recibido en DEV_claro: {"venta_id":"8","estado_nuevo":"comentario","entorno":"DEV_claro"}
+[2025-01-24T22:50:23.163Z] Comentario de la venta recibida: Venta ID 8, Nuevo Estado comentario
+[2025-01-24T22:50:23.163Z] Mensaje recibido en DEV_claro: {"venta_id":"8","estado_nuevo":"comentario","entorno":"DEV_claro"}
+[2025-01-24T22:50:23.163Z] Comentario de la venta recibida: Venta ID 8, Nuevo Estado comentario
+[2025-01-24T22:51:43.185Z] Cliente unido a la room: DEV_claro
+[2025-01-24T22:51:43.185Z] Cliente unido a la room: DEV_claro
+[2025-01-24T22:51:56.041Z] Mensaje recibido en DEV_claro: {"venta_id":"8","estado_nuevo":"comentario","entorno":"DEV_claro"}
+[2025-01-24T22:51:56.041Z] Comentario de la venta recibida: Venta ID 8, Nuevo Estado comentario
+[2025-01-24T22:51:56.042Z] Mensaje recibido en DEV_claro: {"venta_id":"8","estado_nuevo":"comentario","entorno":"DEV_claro"}
+[2025-01-24T22:51:56.042Z] Comentario de la venta recibida: Venta ID 8, Nuevo Estado comentario
+[2025-01-24T22:53:09.820Z] Cliente unido a la room: DEV_claro
+[2025-01-24T22:53:09.821Z] Cliente unido a la room: DEV_claro
+[2025-01-24T22:53:41.166Z] Mensaje recibido en DEV_claro: {"venta_id":"8","estado_nuevo":"comentario","entorno":"DEV_claro"}
+[2025-01-24T22:53:41.167Z] Mensaje recibido en DEV_claro: {"venta_id":"8","estado_nuevo":"comentario","entorno":"DEV_claro"}
+[2025-01-24T22:53:41.167Z] Comentario de la venta recibida: Venta ID 8, Nuevo Estado comentario
+[2025-01-24T22:53:41.167Z] Comentario de la venta recibida: Venta ID 8, Nuevo Estado comentario
+[2025-01-24T22:54:45.351Z] Cliente unido a la room: DEV_claro
+[2025-01-24T23:00:22.381Z] Cliente unido a la room: DEV_claro
+[2025-01-24T23:00:22.383Z] Cliente unido a la room: DEV_claro
+[2025-01-24T23:00:31.682Z] Mensaje recibido en DEV_claro: {"venta_id":"8","estado_nuevo":"comentario","entorno":"DEV_claro"}
+[2025-01-24T23:00:31.683Z] Mensaje recibido en DEV_claro: {"venta_id":"8","estado_nuevo":"comentario","entorno":"DEV_claro"}
+[2025-01-24T23:00:31.682Z] Comentario de la venta recibida: Venta ID 8, Nuevo Estado comentario
+[2025-01-24T23:00:31.683Z] Comentario de la venta recibida: Venta ID 8, Nuevo Estado comentario
+[2025-01-24T23:01:54.013Z] Cliente unido a la room: DEV_claro
+[2025-01-24T23:01:54.013Z] Cliente unido a la room: DEV_claro
+[2025-01-24T23:02:02.130Z] Mensaje recibido en DEV_claro: {"venta_id":"8","estado_nuevo":"comentario","entorno":"DEV_claro"}
+[2025-01-24T23:02:02.131Z] Comentario de la venta recibida: Venta ID 8, Nuevo Estado comentario
+[2025-01-24T23:02:02.131Z] Mensaje recibido en DEV_claro: {"venta_id":"8","estado_nuevo":"comentario","entorno":"DEV_claro"}
+[2025-01-24T23:02:02.131Z] Comentario de la venta recibida: Venta ID 8, Nuevo Estado comentario
+[2025-01-24T23:03:19.792Z] Cliente unido a la room: DEV_claro
+[2025-01-24T23:03:19.792Z] Cliente unido a la room: DEV_claro
+[2025-01-24T23:03:30.039Z] Mensaje recibido en DEV_claro: {"venta_id":"8","estado_nuevo":"comentario","entorno":"DEV_claro"}
+[2025-01-24T23:03:30.039Z] Comentario de la venta recibida: Venta ID 8, Nuevo Estado comentario
+[2025-01-24T23:03:30.039Z] Mensaje recibido en DEV_claro: {"venta_id":"8","estado_nuevo":"comentario","entorno":"DEV_claro"}
+[2025-01-24T23:03:30.039Z] Comentario de la venta recibida: Venta ID 8, Nuevo Estado comentario
+[2025-01-24T23:06:37.571Z] Cliente unido a la room: DEV_claro
+[2025-01-24T23:06:37.573Z] Cliente unido a la room: DEV_claro
+[2025-01-24T23:06:47.610Z] Cliente unido a la room: DEV_claro
+[2025-01-24T23:06:47.611Z] Cliente unido a la room: DEV_claro
+[2025-01-24T23:06:55.516Z] Cliente unido a la room: DEV_claro
+[2025-01-24T23:06:55.516Z] Cliente unido a la room: DEV_claro
+[2025-01-24T23:37:00.376Z] Cliente unido a la room: DEV_claro
+[2025-01-24T23:37:00.377Z] Cliente unido a la room: DEV_claro
+[2025-01-24T23:37:04.636Z] Cliente unido a la room: DEV_claro
+[2025-01-24T23:37:04.637Z] Cliente unido a la room: DEV_claro
+[2025-01-24T23:37:09.221Z] Mensaje recibido en DEV_claro: {"venta_id":"8","estado_nuevo":"comentario","entorno":"DEV_claro"}
+[2025-01-24T23:37:09.221Z] Comentario de la venta recibida: Venta ID 8, Nuevo Estado comentario
+[2025-01-24T23:37:09.222Z] Comentario de la venta recibida: Venta ID 8, Nuevo Estado comentario
+[2025-01-24T23:37:09.221Z] Mensaje recibido en DEV_claro: {"venta_id":"8","estado_nuevo":"comentario","entorno":"DEV_claro"}
+[2025-01-24T23:37:54.793Z] Cliente unido a la room: DEV_claro
+[2025-01-24T23:37:54.794Z] Cliente unido a la room: DEV_claro
+[2025-01-24T23:37:58.202Z] Mensaje recibido en DEV_claro: {"venta_id":"8","estado_nuevo":"comentario","entorno":"DEV_claro"}
+[2025-01-24T23:37:58.202Z] Comentario de la venta recibida: Venta ID 8, Nuevo Estado comentario
+[2025-01-24T23:37:58.202Z] Comentario de la venta recibida: Venta ID 8, Nuevo Estado comentario
+[2025-01-24T23:37:58.202Z] Mensaje recibido en DEV_claro: {"venta_id":"8","estado_nuevo":"comentario","entorno":"DEV_claro"}
+[2025-01-24T23:43:20.493Z] Cliente unido a la room: DEV_claro
+[2025-01-24T23:46:31.250Z] Cliente unido a la room: DEV_claro
+[2025-01-24T23:46:31.250Z] Cliente unido a la room: DEV_claro
+[2025-01-24T23:46:35.064Z] Mensaje recibido en DEV_claro: {"venta_id":"8","estado_nuevo":"comentario","entorno":"DEV_claro"}
+[2025-01-24T23:46:35.064Z] Comentario de la venta recibida: Venta ID 8, Nuevo Estado comentario
+[2025-01-24T23:46:35.064Z] Mensaje recibido en DEV_claro: {"venta_id":"8","estado_nuevo":"comentario","entorno":"DEV_claro"}
+[2025-01-24T23:46:35.064Z] Comentario de la venta recibida: Venta ID 8, Nuevo Estado comentario
+[2025-01-24T23:47:46.363Z] Cliente unido a la room: DEV_claro
+[2025-01-24T23:47:46.363Z] Cliente unido a la room: DEV_claro
+[2025-01-24T23:47:48.961Z] Cliente unido a la room: DEV_claro
+[2025-01-24T23:47:48.961Z] Cliente unido a la room: DEV_claro
+[2025-01-24T23:47:52.661Z] Mensaje recibido en DEV_claro: {"venta_id":"8","estado_nuevo":"comentario","entorno":"DEV_claro"}
+[2025-01-24T23:47:52.662Z] Comentario de la venta recibida: Venta ID 8, Nuevo Estado comentario
+[2025-01-24T23:47:52.662Z] Mensaje recibido en DEV_claro: {"venta_id":"8","estado_nuevo":"comentario","entorno":"DEV_claro"}
+[2025-01-24T23:47:52.662Z] Comentario de la venta recibida: Venta ID 8, Nuevo Estado comentario
+[2025-01-24T23:48:34.863Z] Cliente unido a la room: DEV_claro
+[2025-01-24T23:48:34.864Z] Cliente unido a la room: DEV_claro
+[2025-01-24T23:48:38.259Z] Mensaje recibido en DEV_claro: {"venta_id":"8","estado_nuevo":"comentario","entorno":"DEV_claro"}
+[2025-01-24T23:48:38.259Z] Comentario de la venta recibida: Venta ID 8, Nuevo Estado comentario
+[2025-01-24T23:48:38.260Z] Mensaje recibido en DEV_claro: {"venta_id":"8","estado_nuevo":"comentario","entorno":"DEV_claro"}
+[2025-01-24T23:48:38.260Z] Comentario de la venta recibida: Venta ID 8, Nuevo Estado comentario
+[2025-01-24T23:51:33.433Z] Cliente unido a la room: DEV_claro
+[2025-01-24T23:51:33.434Z] Cliente unido a la room: DEV_claro
+[2025-01-24T23:51:57.663Z] Cliente unido a la room: DEV_claro
+[2025-01-24T23:51:57.663Z] Cliente unido a la room: DEV_claro
+[2025-01-24T23:52:03.739Z] Mensaje recibido en DEV_claro: {"venta_id":"8","estado_nuevo":"comentario","entorno":"DEV_claro"}
+[2025-01-24T23:52:03.739Z] Comentario de la venta recibida: Venta ID 8, Nuevo Estado comentario
+[2025-01-24T23:52:03.739Z] Mensaje recibido en DEV_claro: {"venta_id":"8","estado_nuevo":"comentario","entorno":"DEV_claro"}
+[2025-01-24T23:52:03.739Z] Comentario de la venta recibida: Venta ID 8, Nuevo Estado comentario
+[2025-01-24T23:59:09.378Z] Cliente unido a la room: DEV_claro
+[2025-01-24T23:59:09.379Z] Cliente unido a la room: DEV_claro
+[2025-01-24T23:59:20.669Z] Mensaje recibido en DEV_claro: {"venta_id":"8","estado_nuevo":"comentario","entorno":"DEV_claro"}
+[2025-01-24T23:59:20.669Z] Comentario de la venta recibida: Venta ID 8, Nuevo Estado comentario
+[2025-01-24T23:59:20.670Z] Mensaje recibido en DEV_claro: {"venta_id":"8","estado_nuevo":"comentario","entorno":"DEV_claro"}
+[2025-01-24T23:59:20.670Z] Comentario de la venta recibida: Venta ID 8, Nuevo Estado comentario
+[2025-01-25T00:18:50.402Z] Cliente unido a la room: DEV_claro
+[2025-01-25T00:18:53.584Z] Mensaje recibido en DEV_claro: {"venta_id":"8","estado_nuevo":"comentario","entorno":"DEV_claro"}
+[2025-01-25T00:18:53.584Z] Comentario de la venta recibida: Venta ID 8, Nuevo Estado comentario
+[2025-01-25T00:19:48.535Z] Cliente unido a la room: DEV_claro
+[2025-01-25T00:19:53.581Z] Mensaje recibido en DEV_claro: {"venta_id":"8","estado_nuevo":"comentario","entorno":"DEV_claro"}
+[2025-01-25T00:19:53.581Z] Comentario de la venta recibida: Venta ID 8, Nuevo Estado comentario
+[2025-01-25T00:20:13.686Z] Mensaje recibido en DEV_claro: {"venta_id":"8","estado_nuevo":"comentario","entorno":"DEV_claro"}
+[2025-01-25T00:20:13.687Z] Comentario de la venta recibida: Venta ID 8, Nuevo Estado comentario
+[2025-01-25T00:20:34.543Z] Cliente unido a la room: DEV_claro
+[2025-01-25T00:41:16.911Z] Cliente unido a la room: DEV_claro
+[2025-01-25T00:41:26.079Z] Cliente unido a la room: DEV_claro
+[2025-01-25T00:41:45.549Z] Cliente unido a la room: DEV_claro
+[2025-01-25T00:41:58.114Z] Mensaje recibido en DEV_claro: {"venta_id":"8","estado_nuevo":"comentario","entorno":"DEV_claro"}
+[2025-01-25T00:41:58.115Z] Comentario de la venta recibida: Venta ID 8, Nuevo Estado comentario
+[2025-01-25T00:42:19.715Z] Cliente unido a la room: DEV_claro
+[2025-01-25T00:42:26.192Z] Mensaje recibido en DEV_claro: {"venta_id":"8","estado_nuevo":"comentario","entorno":"DEV_claro"}
+[2025-01-25T00:42:26.192Z] Comentario de la venta recibida: Venta ID 8, Nuevo Estado comentario
+[2025-01-25T00:42:49.304Z] Mensaje recibido en DEV_claro: {"venta_id":"8","estado_nuevo":"comentario","entorno":"DEV_claro"}
+[2025-01-25T00:42:49.304Z] Comentario de la venta recibida: Venta ID 8, Nuevo Estado comentario
+[2025-01-25T00:43:07.754Z] Mensaje recibido en DEV_claro: {"venta_id":8,"estado_nuevo":"NUEVO","entorno":"DEV_claro"}
+[2025-01-25T00:43:07.754Z] Actualización de estado de la venta recibida: Venta ID 8, Nuevo Estado NUEVO
+[2025-01-25T00:43:41.449Z] Mensaje recibido en DEV_claro: {"venta_id":"8","estado_nuevo":"POR_INGRESAR","entorno":"DEV_claro"}
+[2025-01-25T00:43:41.449Z] Actualización de estado de la venta recibida: Venta ID 8, Nuevo Estado POR_INGRESAR
+[2025-01-25T00:44:10.319Z] Mensaje recibido en DEV_claro: {"venta_id":8,"estado_nuevo":"NUEVO","entorno":"DEV_claro"}
+[2025-01-25T00:44:10.319Z] Actualización de estado de la venta recibida: Venta ID 8, Nuevo Estado NUEVO
+[2025-01-25T00:44:28.099Z] Mensaje recibido en DEV_claro: {"venta_id":"8","estado_nuevo":"comentario","entorno":"DEV_claro"}
+[2025-01-25T00:44:28.099Z] Comentario de la venta recibida: Venta ID 8, Nuevo Estado comentario
+[2025-01-25T00:48:34.384Z] Cliente unido a la room: DEV_claro
+[2025-01-25T00:48:57.152Z] Mensaje recibido en DEV_claro: {"venta_id":"8","estado_nuevo":"comentario","entorno":"DEV_claro"}
+[2025-01-25T00:48:57.152Z] Comentario de la venta recibida: Venta ID 8, Nuevo Estado comentario
+[2025-01-25T00:49:06.662Z] Mensaje recibido en DEV_claro: {"venta_id":"8","estado_nuevo":"POR_AUDITAR","entorno":"DEV_claro"}
+[2025-01-25T00:49:06.663Z] Actualización de estado de la venta recibida: Venta ID 8, Nuevo Estado POR_AUDITAR
+[2025-01-25T00:50:19.246Z] Cliente unido a la room: DEV_claro
+[2025-01-25T00:51:17.744Z] Mensaje recibido en DEV_claro: {"venta_id":"8","estado_nuevo":"comentario","entorno":"DEV_claro"}
+[2025-01-25T00:51:17.745Z] Comentario de la venta recibida: Venta ID 8, Nuevo Estado comentario
+[2025-01-25T00:51:22.444Z] Mensaje recibido en DEV_claro: {"venta_id":"11","estado_nuevo":"comentario","entorno":"DEV_claro"}
+[2025-01-25T00:51:22.444Z] Comentario de la venta recibida: Venta ID 11, Nuevo Estado comentario
+[2025-01-25T00:51:26.728Z] Mensaje recibido en DEV_claro: {"venta_id":"29","estado_nuevo":"comentario","entorno":"DEV_claro"}
+[2025-01-25T00:51:26.728Z] Comentario de la venta recibida: Venta ID 29, Nuevo Estado comentario
+[2025-01-25T00:51:32.869Z] Mensaje recibido en DEV_claro: {"venta_id":9,"estado_nuevo":"RECHAZADO_ASCP","entorno":"DEV_claro"}
+[2025-01-25T00:51:32.869Z] Actualización de estado de la venta recibida: Venta ID 9, Nuevo Estado RECHAZADO_ASCP
+[2025-01-25T00:51:37.703Z] Mensaje recibido en DEV_claro: {"venta_id":"8","estado_nuevo":"comentario","entorno":"DEV_claro"}
+[2025-01-25T00:51:37.703Z] Comentario de la venta recibida: Venta ID 8, Nuevo Estado comentario
+[2025-01-25T00:51:59.818Z] Mensaje recibido en DEV_claro: {"venta_id":"29","estado_nuevo":"AUDITANDO","entorno":"DEV_claro"}
+[2025-01-25T00:51:59.818Z] Actualización de estado de la venta recibida: Venta ID 29, Nuevo Estado AUDITANDO

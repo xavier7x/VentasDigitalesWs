@@ -1,0 +1,1000 @@
+[2025-01-24T17:42:02.557Z] Mensaje recibido en PROD_movistar: {"venta_id":"441","estado_nuevo":"AUDITADO","entorno":"PROD_movistar"}
+[2025-01-24T17:42:02.557Z] Actualización de estado de la venta recibida: Venta ID 441, Nuevo Estado AUDITADO
+[2025-01-24T17:42:11.120Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T17:42:59.762Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T17:42:59.793Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T17:42:59.843Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T17:43:00.070Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T17:43:00.287Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T17:43:00.338Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T17:43:00.389Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T17:43:00.397Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T17:43:00.417Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T17:43:00.445Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T17:43:00.488Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T17:43:00.493Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T17:43:00.581Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T17:43:00.743Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T17:43:00.858Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T17:43:00.882Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T17:43:00.900Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T17:43:01.123Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T17:43:01.179Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T17:44:49.880Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T17:44:57.849Z] Mensaje recibido en PROD_movistar: {"venta_id":"6","estado_nuevo":"comentario","entorno":"PROD_movistar"}
+[2025-01-24T17:44:57.849Z] Actualización de estado de la venta recibida: Venta ID 6, Nuevo Estado comentario
+[2025-01-24T17:45:02.178Z] Mensaje recibido en PROD_movistar: {"venta_id":"434","estado_nuevo":"AUDITADO","entorno":"PROD_movistar"}
+[2025-01-24T17:45:02.178Z] Actualización de estado de la venta recibida: Venta ID 434, Nuevo Estado AUDITADO
+[2025-01-24T17:45:12.645Z] Mensaje recibido en PROD_movistar: {"venta_id":"433","estado_nuevo":"comentario","entorno":"PROD_movistar"}
+[2025-01-24T17:45:12.646Z] Actualización de estado de la venta recibida: Venta ID 433, Nuevo Estado comentario
+[2025-01-24T17:46:11.738Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T17:46:52.138Z] Mensaje recibido en PROD_movistar: {"venta_id":"445","estado_nuevo":"SOCKET","entorno":"PROD_movistar"}
+[2025-01-24T17:46:52.138Z] Actualización de estado de la venta recibida: Venta ID 445, Nuevo Estado SOCKET
+[2025-01-24T17:47:34.088Z] Mensaje recibido en PROD_movistar: {"venta_id":"445","estado_nuevo":"POR_AUDITAR","entorno":"PROD_movistar"}
+[2025-01-24T17:47:34.089Z] Actualización de estado de la venta recibida: Venta ID 445, Nuevo Estado POR_AUDITAR
+[2025-01-24T17:47:56.357Z] Mensaje recibido en PROD_movistar: {"venta_id":"398","estado_nuevo":"APROBADO","entorno":"PROD_movistar"}
+[2025-01-24T17:47:56.357Z] Actualización de estado de la venta recibida: Venta ID 398, Nuevo Estado APROBADO
+[2025-01-24T17:48:50.188Z] Mensaje recibido en PROD_movistar: {"venta_id":"442","estado_nuevo":"AUDITADO","entorno":"PROD_movistar"}
+[2025-01-24T17:48:50.188Z] Actualización de estado de la venta recibida: Venta ID 442, Nuevo Estado AUDITADO
+[2025-01-24T17:52:25.951Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T17:53:10.771Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T17:53:53.326Z] Mensaje recibido en PROD_movistar: {"venta_id":"434","estado_nuevo":"POR_INGRESAR","entorno":"PROD_movistar"}
+[2025-01-24T17:53:53.326Z] Actualización de estado de la venta recibida: Venta ID 434, Nuevo Estado POR_INGRESAR
+[2025-01-24T17:54:47.925Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T17:58:00.892Z] Mensaje recibido en PROD_movistar: {"venta_id":"444","estado_nuevo":"AUDITADO","entorno":"PROD_movistar"}
+[2025-01-24T17:58:00.892Z] Actualización de estado de la venta recibida: Venta ID 444, Nuevo Estado AUDITADO
+[2025-01-24T17:58:10.316Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T18:00:14.040Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T18:01:35.305Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T18:04:30.616Z] Mensaje recibido en PROD_movistar: {"venta_id":"","estado_nuevo":"SOCKET","entorno":"PROD_movistar"}
+[2025-01-24T18:04:30.617Z] Mensaje recibido con formato incorrecto.
+[2025-01-24T18:07:29.409Z] Mensaje recibido en PROD_movistar: {"venta_id":"439","estado_nuevo":"SOCKET","entorno":"PROD_movistar"}
+[2025-01-24T18:07:29.409Z] Actualización de estado de la venta recibida: Venta ID 439, Nuevo Estado SOCKET
+[2025-01-24T18:07:41.265Z] Mensaje recibido en PROD_movistar: {"venta_id":"439","estado_nuevo":"POR_AUDITAR","entorno":"PROD_movistar"}
+[2025-01-24T18:07:41.265Z] Actualización de estado de la venta recibida: Venta ID 439, Nuevo Estado POR_AUDITAR
+[2025-01-24T18:08:08.251Z] Mensaje recibido en PROD_movistar: {"venta_id":"446","estado_nuevo":"POR_AUDITAR","entorno":"PROD_movistar"}
+[2025-01-24T18:08:08.251Z] Actualización de estado de la venta recibida: Venta ID 446, Nuevo Estado POR_AUDITAR
+[2025-01-24T18:08:18.923Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T18:09:01.501Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T18:10:27.630Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T18:10:27.634Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T18:10:27.781Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T18:10:27.988Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T18:10:28.122Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T18:10:28.233Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T18:10:28.267Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T18:10:28.278Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T18:10:28.292Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T18:10:28.411Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T18:10:28.522Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T18:10:28.583Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T18:10:28.784Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T18:10:28.913Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T18:10:28.936Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T18:10:29.713Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T18:10:29.775Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T18:11:48.201Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T18:12:43.674Z] Mensaje recibido en PROD_movistar: {"venta_id":"445","estado_nuevo":"AUDITADO","entorno":"PROD_movistar"}
+[2025-01-24T18:12:43.674Z] Actualización de estado de la venta recibida: Venta ID 445, Nuevo Estado AUDITADO
+[2025-01-24T18:13:01.386Z] Mensaje recibido en PROD_movistar: {"venta_id":"439","estado_nuevo":"AUDITADO","entorno":"PROD_movistar"}
+[2025-01-24T18:13:01.386Z] Actualización de estado de la venta recibida: Venta ID 439, Nuevo Estado AUDITADO
+[2025-01-24T18:13:01.731Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T18:13:53.927Z] Mensaje recibido en PROD_movistar: {"venta_id":"415","estado_nuevo":"APROBADO","entorno":"PROD_movistar"}
+[2025-01-24T18:13:53.927Z] Actualización de estado de la venta recibida: Venta ID 415, Nuevo Estado APROBADO
+[2025-01-24T18:15:00.588Z] Mensaje recibido en PROD_movistar: {"venta_id":"412","estado_nuevo":"INGRESADO","entorno":"PROD_movistar"}
+[2025-01-24T18:15:00.588Z] Actualización de estado de la venta recibida: Venta ID 412, Nuevo Estado INGRESADO
+[2025-01-24T18:15:14.047Z] Mensaje recibido en PROD_movistar: {"venta_id":"412","estado_nuevo":"APROBADO","entorno":"PROD_movistar"}
+[2025-01-24T18:15:14.047Z] Actualización de estado de la venta recibida: Venta ID 412, Nuevo Estado APROBADO
+[2025-01-24T18:16:48.641Z] Mensaje recibido en PROD_movistar: {"venta_id":"418","estado_nuevo":"APROBADO","entorno":"PROD_movistar"}
+[2025-01-24T18:16:48.641Z] Actualización de estado de la venta recibida: Venta ID 418, Nuevo Estado APROBADO
+[2025-01-24T18:16:55.937Z] Mensaje recibido en PROD_movistar: {"venta_id":"419","estado_nuevo":"APROBADO","entorno":"PROD_movistar"}
+[2025-01-24T18:16:55.937Z] Actualización de estado de la venta recibida: Venta ID 419, Nuevo Estado APROBADO
+[2025-01-24T18:17:04.087Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T18:17:42.172Z] Mensaje recibido en PROD_movistar: {"venta_id":"434","estado_nuevo":"INGRESADO","entorno":"PROD_movistar"}
+[2025-01-24T18:17:42.172Z] Actualización de estado de la venta recibida: Venta ID 434, Nuevo Estado INGRESADO
+[2025-01-24T18:18:03.989Z] Mensaje recibido en PROD_movistar: {"venta_id":"","estado_nuevo":"SOCKET","entorno":"PROD_movistar"}
+[2025-01-24T18:18:03.989Z] Mensaje recibido con formato incorrecto.
+[2025-01-24T18:22:21.322Z] Mensaje recibido en PROD_movistar: {"venta_id":"282","estado_nuevo":"comentario","entorno":"PROD_movistar"}
+[2025-01-24T18:22:21.322Z] Actualización de estado de la venta recibida: Venta ID 282, Nuevo Estado comentario
+[2025-01-24T18:22:33.076Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T18:22:59.041Z] Mensaje recibido en PROD_movistar: {"venta_id":"446","estado_nuevo":"comentario","entorno":"PROD_movistar"}
+[2025-01-24T18:22:59.041Z] Actualización de estado de la venta recibida: Venta ID 446, Nuevo Estado comentario
+[2025-01-24T18:23:49.059Z] Mensaje recibido en PROD_movistar: {"venta_id":"447","estado_nuevo":"SOCKET","entorno":"PROD_movistar"}
+[2025-01-24T18:23:49.059Z] Actualización de estado de la venta recibida: Venta ID 447, Nuevo Estado SOCKET
+[2025-01-24T18:23:54.287Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T18:24:18.920Z] Mensaje recibido en PROD_movistar: {"venta_id":"447","estado_nuevo":"POR_AUDITAR","entorno":"PROD_movistar"}
+[2025-01-24T18:24:18.920Z] Actualización de estado de la venta recibida: Venta ID 447, Nuevo Estado POR_AUDITAR
+[2025-01-24T18:29:08.917Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T18:29:20.927Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T18:30:47.276Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T18:30:48.776Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T18:31:21.378Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T18:31:25.822Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T18:35:15.644Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T18:35:19.026Z] Mensaje recibido en PROD_movistar: {"venta_id":"420","estado_nuevo":"INGRESADO","entorno":"PROD_movistar"}
+[2025-01-24T18:35:19.026Z] Actualización de estado de la venta recibida: Venta ID 420, Nuevo Estado INGRESADO
+[2025-01-24T18:38:23.758Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T18:38:43.950Z] Mensaje recibido en PROD_movistar: {"venta_id":"440","estado_nuevo":"POR_INGRESAR","entorno":"PROD_movistar"}
+[2025-01-24T18:38:43.950Z] Actualización de estado de la venta recibida: Venta ID 440, Nuevo Estado POR_INGRESAR
+[2025-01-24T18:39:46.526Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T18:44:25.475Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T18:48:53.068Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T18:49:20.544Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T18:49:39.895Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T18:53:04.251Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T18:54:13.660Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T18:54:38.354Z] Mensaje recibido en PROD_movistar: {"venta_id":"443","estado_nuevo":"POR_AUDITAR","entorno":"PROD_movistar"}
+[2025-01-24T18:54:38.354Z] Actualización de estado de la venta recibida: Venta ID 443, Nuevo Estado POR_AUDITAR
+[2025-01-24T18:54:53.684Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T18:57:10.376Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T18:58:43.091Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T19:00:14.072Z] Mensaje recibido en PROD_movistar: {"venta_id":"443","estado_nuevo":"AUDITADO","entorno":"PROD_movistar"}
+[2025-01-24T19:00:14.072Z] Actualización de estado de la venta recibida: Venta ID 443, Nuevo Estado AUDITADO
+[2025-01-24T19:01:41.123Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T19:01:56.970Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T19:04:42.642Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T19:05:55.845Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T19:08:46.662Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T19:09:13.368Z] Mensaje recibido en PROD_movistar: {"venta_id":"","estado_nuevo":"SOCKET","entorno":"PROD_movistar"}
+[2025-01-24T19:09:13.369Z] Mensaje recibido con formato incorrecto.
+[2025-01-24T19:09:19.946Z] Mensaje recibido en PROD_movistar: {"venta_id":"","estado_nuevo":"SOCKET","entorno":"PROD_movistar"}
+[2025-01-24T19:09:19.946Z] Mensaje recibido con formato incorrecto.
+[2025-01-24T19:09:50.338Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T19:12:06.984Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T19:12:42.081Z] Mensaje recibido en PROD_movistar: {"venta_id":"449","estado_nuevo":"SOCKET","entorno":"PROD_movistar"}
+[2025-01-24T19:12:42.081Z] Actualización de estado de la venta recibida: Venta ID 449, Nuevo Estado SOCKET
+[2025-01-24T19:13:59.568Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T19:13:59.625Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T19:14:00.185Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T19:14:00.222Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T19:14:00.301Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T19:14:00.677Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T19:14:01.186Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T19:14:01.403Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T19:14:01.442Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T19:14:01.675Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T19:14:01.742Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T19:14:01.941Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T19:14:02.090Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T19:14:02.273Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T19:14:02.279Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T19:14:02.636Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T19:14:02.895Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T19:14:02.896Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T19:14:02.911Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T19:14:03.054Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T19:14:04.197Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T19:14:04.367Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T19:14:04.429Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T19:14:04.430Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T19:14:05.181Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T19:14:09.219Z] Mensaje recibido en PROD_movistar: {"venta_id":"440","estado_nuevo":"INGRESADO","entorno":"PROD_movistar"}
+[2025-01-24T19:14:09.219Z] Actualización de estado de la venta recibida: Venta ID 440, Nuevo Estado INGRESADO
+[2025-01-24T19:15:27.415Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T19:15:27.471Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T19:15:27.479Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T19:15:27.633Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T19:15:27.841Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T19:15:28.818Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T19:15:29.000Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T19:15:29.353Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T19:15:29.596Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T19:15:29.880Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T19:15:30.216Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T19:15:30.378Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T19:15:30.396Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T19:15:30.493Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T19:15:30.583Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T19:15:30.719Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T19:15:31.165Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T19:15:31.365Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T19:15:31.527Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T19:15:32.277Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T19:15:32.278Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T19:15:32.298Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T19:15:32.650Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T19:15:32.950Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T19:15:41.619Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T19:16:08.485Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T19:16:09.763Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T19:16:24.509Z] Mensaje recibido en PROD_movistar: {"venta_id":"406","estado_nuevo":"APROBADO","entorno":"PROD_movistar"}
+[2025-01-24T19:16:24.510Z] Actualización de estado de la venta recibida: Venta ID 406, Nuevo Estado APROBADO
+[2025-01-24T19:16:36.932Z] Mensaje recibido en PROD_movistar: {"venta_id":"422","estado_nuevo":"APROBADO","entorno":"PROD_movistar"}
+[2025-01-24T19:16:36.932Z] Actualización de estado de la venta recibida: Venta ID 422, Nuevo Estado APROBADO
+[2025-01-24T19:17:51.938Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T19:17:52.534Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T19:17:52.695Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T19:17:52.962Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T19:17:53.531Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T19:17:53.626Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T19:17:53.673Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T19:17:53.813Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T19:17:54.139Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T19:17:54.230Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T19:17:54.247Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T19:17:54.503Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T19:17:55.134Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T19:17:55.215Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T19:17:55.245Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T19:17:55.628Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T19:17:56.112Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T19:17:56.337Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T19:17:56.343Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T19:17:56.413Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T19:17:56.419Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T19:17:56.443Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T19:17:56.690Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T19:17:57.083Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T19:17:58.982Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T19:18:00.950Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T19:18:05.246Z] Mensaje recibido en PROD_movistar: {"venta_id":"416","estado_nuevo":"APROBADO","entorno":"PROD_movistar"}
+[2025-01-24T19:18:05.246Z] Actualización de estado de la venta recibida: Venta ID 416, Nuevo Estado APROBADO
+[2025-01-24T19:18:20.147Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T19:19:29.340Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T19:19:29.377Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T19:19:29.381Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T19:19:29.476Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T19:19:29.489Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T19:19:29.539Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T19:19:29.627Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T19:19:31.128Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T19:19:31.301Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T19:19:31.320Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T19:19:31.526Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T19:19:32.548Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T19:19:32.645Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T19:19:32.663Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T19:19:33.075Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T19:19:33.247Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T19:19:33.436Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T19:19:33.552Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T19:19:33.694Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T19:19:34.045Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T19:19:34.267Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T19:19:34.357Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T19:19:34.527Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T19:19:34.888Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T19:19:36.180Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T19:19:38.763Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T19:19:42.473Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T19:19:54.645Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T19:20:17.281Z] Mensaje recibido en PROD_movistar: {"venta_id":"434","estado_nuevo":"comentario","entorno":"PROD_movistar"}
+[2025-01-24T19:20:17.281Z] Actualización de estado de la venta recibida: Venta ID 434, Nuevo Estado comentario
+[2025-01-24T19:21:33.689Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T19:21:34.833Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T19:21:35.053Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T19:21:35.235Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T19:21:35.364Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T19:21:35.592Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T19:21:35.890Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T19:21:35.921Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T19:21:36.297Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T19:21:36.325Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T19:21:37.082Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T19:21:37.147Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T19:21:37.164Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T19:21:37.180Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T19:21:37.226Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T19:21:37.274Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T19:21:37.321Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T19:21:37.375Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T19:21:37.520Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T19:21:37.569Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T19:21:38.450Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T19:21:38.587Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T19:21:38.676Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T19:21:38.773Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T19:21:38.924Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T19:21:43.504Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T19:21:48.514Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T19:21:52.242Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T19:22:00.117Z] Mensaje recibido en PROD_movistar: {"venta_id":"449","estado_nuevo":"POR_AUDITAR","entorno":"PROD_movistar"}
+[2025-01-24T19:22:00.117Z] Actualización de estado de la venta recibida: Venta ID 449, Nuevo Estado POR_AUDITAR
+[2025-01-24T19:23:16.352Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T19:23:17.016Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T19:23:17.302Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T19:23:17.944Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T19:23:17.953Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T19:23:18.210Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T19:23:18.618Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T19:23:18.628Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T19:23:18.913Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T19:23:19.134Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T19:23:19.178Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T19:23:19.633Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T19:23:19.810Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T19:23:20.237Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T19:23:20.284Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T19:23:20.460Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T19:23:20.509Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T19:23:20.626Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T19:23:20.893Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T19:23:21.166Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T19:23:21.286Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T19:23:21.364Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T19:23:21.436Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T19:23:30.969Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T19:23:43.221Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T19:23:44.906Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T19:24:29.180Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T19:24:43.265Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T19:25:14.896Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T19:26:06.514Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T19:26:47.898Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T19:26:48.641Z] Mensaje recibido en PROD_movistar: {"venta_id":"448","estado_nuevo":"POR_AUDITAR","entorno":"PROD_movistar"}
+[2025-01-24T19:26:48.641Z] Actualización de estado de la venta recibida: Venta ID 448, Nuevo Estado POR_AUDITAR
+[2025-01-24T19:28:29.333Z] Mensaje recibido en PROD_movistar: {"venta_id":"408","estado_nuevo":"APROBADO","entorno":"PROD_movistar"}
+[2025-01-24T19:28:29.333Z] Actualización de estado de la venta recibida: Venta ID 408, Nuevo Estado APROBADO
+[2025-01-24T19:29:21.389Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T19:29:21.820Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T19:29:21.968Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T19:29:22.021Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T19:29:22.117Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T19:29:22.172Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T19:29:22.278Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T19:29:22.286Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T19:29:22.294Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T19:29:22.343Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T19:29:22.363Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T19:29:22.382Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T19:29:22.452Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T19:29:22.502Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T19:29:22.507Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T19:29:22.593Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T19:29:22.635Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T19:29:22.655Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T19:29:22.760Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T19:29:22.797Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T19:29:22.947Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T19:29:23.596Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T19:29:24.681Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T19:30:34.793Z] Mensaje recibido en PROD_movistar: {"venta_id":"356","estado_nuevo":"APROBADO","entorno":"PROD_movistar"}
+[2025-01-24T19:30:34.793Z] Actualización de estado de la venta recibida: Venta ID 356, Nuevo Estado APROBADO
+[2025-01-24T19:31:56.449Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T19:31:56.542Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T19:31:56.581Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T19:31:56.858Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T19:31:57.147Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T19:31:57.250Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T19:31:57.326Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T19:31:57.796Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T19:31:57.934Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T19:31:58.159Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T19:31:58.194Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T19:31:58.571Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T19:31:59.350Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T19:31:59.537Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T19:31:59.791Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T19:31:59.830Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T19:31:59.900Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T19:31:59.917Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T19:32:00.130Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T19:32:00.165Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T19:32:00.725Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T19:32:01.257Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T19:32:01.624Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T19:32:01.764Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T19:32:01.896Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T19:32:02.321Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T19:32:09.161Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T19:32:38.049Z] Mensaje recibido en PROD_movistar: {"venta_id":"427","estado_nuevo":"APROBADO","entorno":"PROD_movistar"}
+[2025-01-24T19:32:38.049Z] Actualización de estado de la venta recibida: Venta ID 427, Nuevo Estado APROBADO
+[2025-01-24T19:34:03.442Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T19:34:04.232Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T19:34:04.834Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T19:34:05.298Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T19:34:06.022Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T19:34:06.115Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T19:34:06.173Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T19:34:06.258Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T19:34:06.475Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T19:34:06.599Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T19:34:06.620Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T19:34:07.040Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T19:34:07.266Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T19:34:07.513Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T19:34:07.593Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T19:34:07.654Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T19:34:07.748Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T19:34:07.811Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T19:34:08.003Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T19:34:08.074Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T19:34:08.273Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T19:34:08.476Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T19:34:08.918Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T19:34:08.966Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T19:34:11.526Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T19:34:11.988Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T19:34:26.578Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T19:34:26.651Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T19:35:11.993Z] Mensaje recibido en PROD_movistar: {"venta_id":"429","estado_nuevo":"APROBADO","entorno":"PROD_movistar"}
+[2025-01-24T19:35:11.993Z] Actualización de estado de la venta recibida: Venta ID 429, Nuevo Estado APROBADO
+[2025-01-24T19:36:28.517Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T19:36:28.734Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T19:36:29.076Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T19:36:29.380Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T19:36:29.921Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T19:36:30.248Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T19:36:30.255Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T19:36:30.281Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T19:36:30.458Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T19:36:30.492Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T19:36:30.510Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T19:36:30.581Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T19:36:30.598Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T19:36:30.609Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T19:36:31.641Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T19:36:31.731Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T19:36:31.732Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T19:36:31.830Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T19:36:32.279Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T19:36:32.335Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T19:36:32.453Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T19:36:33.130Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T19:36:33.274Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T19:36:33.703Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T19:36:34.541Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T19:36:35.405Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T19:36:40.717Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T19:37:31.265Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T19:38:03.840Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T19:39:22.725Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T19:39:28.026Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T19:43:28.935Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T19:43:57.605Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T19:44:01.291Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T19:46:12.684Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T19:46:46.097Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T19:49:31.047Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T19:49:46.256Z] Mensaje recibido en PROD_movistar: {"venta_id":432,"estado_nuevo":"NUEVO","entorno":"PROD_movistar"}
+[2025-01-24T19:49:46.256Z] Actualización de estado de la venta recibida: Venta ID 432, Nuevo Estado NUEVO
+[2025-01-24T19:50:35.504Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T19:51:29.186Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T19:51:29.694Z] Mensaje recibido en PROD_movistar: {"venta_id":"","estado_nuevo":"SOCKET","entorno":"PROD_movistar"}
+[2025-01-24T19:51:29.695Z] Mensaje recibido con formato incorrecto.
+[2025-01-24T19:52:15.758Z] Mensaje recibido en PROD_movistar: {"venta_id":"","estado_nuevo":"SOCKET","entorno":"PROD_movistar"}
+[2025-01-24T19:52:15.758Z] Mensaje recibido con formato incorrecto.
+[2025-01-24T19:53:30.848Z] Mensaje recibido en PROD_movistar: {"venta_id":"451","estado_nuevo":"POR_AUDITAR","entorno":"PROD_movistar"}
+[2025-01-24T19:53:30.848Z] Actualización de estado de la venta recibida: Venta ID 451, Nuevo Estado POR_AUDITAR
+[2025-01-24T19:54:39.198Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T19:55:43.022Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T19:56:48.502Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T19:57:33.538Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T19:58:29.514Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T19:58:29.698Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T19:58:29.806Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T19:58:29.930Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T19:58:29.936Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T19:58:30.077Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T19:58:30.179Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T19:58:30.193Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T19:58:30.258Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T19:58:30.265Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T19:58:30.299Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T19:58:30.367Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T19:58:30.437Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T19:58:30.437Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T19:58:30.585Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T19:58:30.633Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T19:58:30.679Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T19:58:30.842Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T19:58:36.135Z] Mensaje recibido en PROD_movistar: {"venta_id":"403","estado_nuevo":"INGRESADO","entorno":"PROD_movistar"}
+[2025-01-24T19:58:36.135Z] Actualización de estado de la venta recibida: Venta ID 403, Nuevo Estado INGRESADO
+[2025-01-24T19:59:02.711Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T19:59:47.843Z] Mensaje recibido en PROD_movistar: {"venta_id":"","estado_nuevo":"SOCKET","entorno":"PROD_movistar"}
+[2025-01-24T19:59:47.843Z] Mensaje recibido con formato incorrecto.
+[2025-01-24T20:00:45.988Z] Mensaje recibido en PROD_movistar: {"venta_id":"400","estado_nuevo":"APROBADO","entorno":"PROD_movistar"}
+[2025-01-24T20:00:45.988Z] Actualización de estado de la venta recibida: Venta ID 400, Nuevo Estado APROBADO
+[2025-01-24T20:01:10.235Z] Mensaje recibido en PROD_movistar: {"venta_id":"450","estado_nuevo":"SOCKET","entorno":"PROD_movistar"}
+[2025-01-24T20:01:10.236Z] Actualización de estado de la venta recibida: Venta ID 450, Nuevo Estado SOCKET
+[2025-01-24T20:01:23.296Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T20:02:03.603Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T20:02:16.047Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T20:02:20.733Z] Mensaje recibido en PROD_movistar: {"venta_id":"433","estado_nuevo":"APROBADO","entorno":"PROD_movistar"}
+[2025-01-24T20:02:20.733Z] Actualización de estado de la venta recibida: Venta ID 433, Nuevo Estado APROBADO
+[2025-01-24T20:03:08.240Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T20:03:35.414Z] Mensaje recibido en PROD_movistar: {"venta_id":"","estado_nuevo":"SOCKET","entorno":"PROD_movistar"}
+[2025-01-24T20:03:35.414Z] Mensaje recibido con formato incorrecto.
+[2025-01-24T20:03:47.466Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T20:04:33.494Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T20:05:09.098Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T20:05:32.417Z] Mensaje recibido en PROD_movistar: {"venta_id":"438","estado_nuevo":"comentario","entorno":"PROD_movistar"}
+[2025-01-24T20:05:32.417Z] Actualización de estado de la venta recibida: Venta ID 438, Nuevo Estado comentario
+[2025-01-24T20:06:51.444Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T20:06:51.632Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T20:06:52.858Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T20:06:53.194Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T20:06:53.326Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T20:06:53.452Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T20:06:53.471Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T20:06:53.767Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T20:06:53.984Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T20:06:54.134Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T20:06:54.161Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T20:06:54.168Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T20:06:54.293Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T20:06:54.300Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T20:06:54.431Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T20:06:54.741Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T20:06:55.395Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T20:06:55.405Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T20:06:55.633Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T20:06:55.640Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T20:06:55.952Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T20:06:56.373Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T20:06:56.536Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T20:06:56.574Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T20:06:57.175Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T20:06:58.216Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T20:07:04.485Z] Mensaje recibido en PROD_movistar: {"venta_id":"410","estado_nuevo":"INGRESADO","entorno":"PROD_movistar"}
+[2025-01-24T20:07:04.485Z] Actualización de estado de la venta recibida: Venta ID 410, Nuevo Estado INGRESADO
+[2025-01-24T20:08:36.254Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T20:08:36.305Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T20:08:37.274Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T20:08:37.429Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T20:08:37.529Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T20:08:37.943Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T20:08:38.419Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T20:08:38.581Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T20:08:38.668Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T20:08:38.846Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T20:08:38.872Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T20:08:39.043Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T20:08:39.171Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T20:08:39.252Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T20:08:39.413Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T20:08:39.722Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T20:08:40.086Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T20:08:40.279Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T20:08:40.325Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T20:08:40.369Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T20:08:40.466Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T20:08:40.584Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T20:08:40.638Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T20:08:41.191Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T20:08:41.236Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T20:09:09.493Z] Mensaje recibido en PROD_movistar: {"venta_id":"451","estado_nuevo":"AUDITADO","entorno":"PROD_movistar"}
+[2025-01-24T20:09:09.493Z] Actualización de estado de la venta recibida: Venta ID 451, Nuevo Estado AUDITADO
+[2025-01-24T20:10:26.430Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T20:10:26.440Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T20:10:26.485Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T20:10:26.675Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T20:10:27.084Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T20:10:27.422Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T20:10:27.592Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T20:10:27.601Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T20:10:28.034Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T20:10:28.339Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T20:10:29.514Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T20:10:29.575Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T20:10:29.617Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T20:10:29.925Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T20:10:30.017Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T20:10:30.246Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T20:10:30.492Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T20:10:30.585Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T20:10:30.768Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T20:10:31.014Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T20:10:31.578Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T20:10:31.791Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T20:10:31.923Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T20:10:34.029Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T20:10:51.154Z] Mensaje recibido en PROD_movistar: {"venta_id":"453","estado_nuevo":"POR_AUDITAR","entorno":"PROD_movistar"}
+[2025-01-24T20:10:51.154Z] Actualización de estado de la venta recibida: Venta ID 453, Nuevo Estado POR_AUDITAR
+[2025-01-24T20:12:25.626Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T20:12:25.703Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T20:12:26.585Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T20:12:26.640Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T20:12:27.108Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T20:12:27.161Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T20:12:27.216Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T20:12:27.503Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T20:12:27.574Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T20:12:27.941Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T20:12:28.147Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T20:12:28.241Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T20:12:28.318Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T20:12:28.799Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T20:12:28.924Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T20:12:29.263Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T20:12:29.318Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T20:12:29.554Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T20:12:29.616Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T20:12:29.713Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T20:12:29.837Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T20:12:30.453Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T20:12:30.516Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T20:12:56.306Z] Mensaje recibido en PROD_movistar: {"venta_id":"","estado_nuevo":"SOCKET","entorno":"PROD_movistar"}
+[2025-01-24T20:12:56.306Z] Mensaje recibido con formato incorrecto.
+[2025-01-24T20:12:59.271Z] Mensaje recibido en PROD_movistar: {"venta_id":"446","estado_nuevo":"comentario","entorno":"PROD_movistar"}
+[2025-01-24T20:12:59.271Z] Actualización de estado de la venta recibida: Venta ID 446, Nuevo Estado comentario
+[2025-01-24T20:14:15.479Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T20:14:15.829Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T20:14:15.988Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T20:14:16.136Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T20:14:16.288Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T20:14:16.437Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T20:14:16.677Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T20:14:17.608Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T20:14:17.760Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T20:14:17.868Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T20:14:18.310Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T20:14:18.548Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T20:14:18.673Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T20:14:18.677Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T20:14:19.074Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T20:14:19.232Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T20:14:19.239Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T20:14:19.481Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T20:14:20.302Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T20:14:20.337Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T20:14:20.343Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T20:14:20.544Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T20:14:21.011Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T20:14:24.197Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T20:14:38.637Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T20:14:42.947Z] Mensaje recibido en PROD_movistar: {"venta_id":"450","estado_nuevo":"SOCKET","entorno":"PROD_movistar"}
+[2025-01-24T20:14:42.947Z] Actualización de estado de la venta recibida: Venta ID 450, Nuevo Estado SOCKET
+[2025-01-24T20:14:43.812Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T20:15:00.533Z] Mensaje recibido en PROD_movistar: {"venta_id":"417","estado_nuevo":"INGRESADO","entorno":"PROD_movistar"}
+[2025-01-24T20:15:00.533Z] Actualización de estado de la venta recibida: Venta ID 417, Nuevo Estado INGRESADO
+[2025-01-24T20:15:05.304Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T20:16:17.458Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T20:16:17.626Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T20:16:17.789Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T20:16:17.922Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T20:16:18.321Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T20:16:18.702Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T20:16:19.437Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T20:16:19.438Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T20:16:19.474Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T20:16:19.715Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T20:16:19.944Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T20:16:19.951Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T20:16:20.123Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T20:16:20.520Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T20:16:20.773Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T20:16:20.833Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T20:16:21.047Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T20:16:21.265Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T20:16:22.188Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T20:16:22.216Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T20:16:22.261Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T20:16:22.285Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T20:16:22.601Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T20:16:25.960Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T20:17:39.048Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T20:18:11.330Z] Mensaje recibido en PROD_movistar: {"venta_id":"452","estado_nuevo":"POR_AUDITAR","entorno":"PROD_movistar"}
+[2025-01-24T20:18:11.330Z] Actualización de estado de la venta recibida: Venta ID 452, Nuevo Estado POR_AUDITAR
+[2025-01-24T20:19:18.728Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T20:20:00.801Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T20:20:42.138Z] Mensaje recibido en PROD_movistar: {"venta_id":"448","estado_nuevo":"AUDITADO","entorno":"PROD_movistar"}
+[2025-01-24T20:20:42.138Z] Actualización de estado de la venta recibida: Venta ID 448, Nuevo Estado AUDITADO
+[2025-01-24T20:21:58.513Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T20:21:58.532Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T20:21:58.701Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T20:21:58.732Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T20:21:59.087Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T20:22:00.305Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T20:22:00.320Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T20:22:00.626Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T20:22:00.640Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T20:22:01.826Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T20:22:01.951Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T20:22:01.990Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T20:22:02.016Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T20:22:02.329Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T20:22:02.393Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T20:22:02.513Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T20:22:02.841Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T20:22:02.865Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T20:22:02.971Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T20:22:03.309Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T20:22:03.609Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T20:22:03.727Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T20:22:03.738Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T20:22:06.517Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T20:22:11.394Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T20:24:43.341Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T20:26:28.520Z] Mensaje recibido en PROD_movistar: {"venta_id":"454","estado_nuevo":"SOCKET","entorno":"PROD_movistar"}
+[2025-01-24T20:26:28.520Z] Actualización de estado de la venta recibida: Venta ID 454, Nuevo Estado SOCKET
+[2025-01-24T20:26:40.527Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T20:27:32.048Z] Mensaje recibido en PROD_movistar: {"venta_id":"454","estado_nuevo":"SOCKET","entorno":"PROD_movistar"}
+[2025-01-24T20:27:32.049Z] Actualización de estado de la venta recibida: Venta ID 454, Nuevo Estado SOCKET
+[2025-01-24T20:28:28.239Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T20:28:39.831Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T20:29:17.303Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T20:29:33.759Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T20:30:23.574Z] Mensaje recibido en PROD_movistar: {"venta_id":"454","estado_nuevo":"POR_AUDITAR","entorno":"PROD_movistar"}
+[2025-01-24T20:30:23.574Z] Actualización de estado de la venta recibida: Venta ID 454, Nuevo Estado POR_AUDITAR
+[2025-01-24T20:30:45.488Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T20:30:45.489Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T20:30:45.503Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T20:30:45.504Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T20:30:45.506Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T20:30:45.509Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T20:30:45.511Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T20:30:45.514Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T20:30:45.515Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T20:30:45.519Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T20:30:45.520Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T20:30:45.522Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T20:30:45.539Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T20:30:45.543Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T20:30:45.545Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T20:30:45.547Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T20:30:45.548Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T20:30:45.563Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T20:30:45.607Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T20:30:45.786Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T20:30:45.807Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T20:30:45.853Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T20:47:14.928Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T20:47:23.697Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T20:47:24.815Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T20:47:25.884Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T20:47:25.886Z] Mensaje recibido en PROD_movistar: {"venta_id":"452","estado_nuevo":"comentario","entorno":"PROD_movistar"}
+[2025-01-24T20:47:25.886Z] Actualización de estado de la venta recibida: Venta ID 452, Nuevo Estado comentario
+[2025-01-24T20:47:25.888Z] Mensaje recibido en PROD_movistar: {"venta_id":"453","estado_nuevo":"AUDITADO","entorno":"PROD_movistar"}
+[2025-01-24T20:47:25.888Z] Actualización de estado de la venta recibida: Venta ID 453, Nuevo Estado AUDITADO
+[2025-01-24T20:47:25.888Z] Mensaje recibido en PROD_movistar: {"venta_id":"454","estado_nuevo":"AUDITADO","entorno":"PROD_movistar"}
+[2025-01-24T20:47:25.888Z] Actualización de estado de la venta recibida: Venta ID 454, Nuevo Estado AUDITADO
+[2025-01-24T20:47:26.267Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T20:47:28.641Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T20:47:32.242Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T20:47:35.154Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T20:47:35.854Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T20:47:38.270Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T20:47:39.597Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T20:47:41.268Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T20:47:44.203Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T20:47:46.186Z] Mensaje recibido en PROD_movistar: {"venta_id":"448","estado_nuevo":"POR_INGRESAR","entorno":"PROD_movistar"}
+[2025-01-24T20:47:46.187Z] Actualización de estado de la venta recibida: Venta ID 448, Nuevo Estado POR_INGRESAR
+[2025-01-24T20:47:47.457Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T20:49:49.147Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T20:49:49.148Z] Mensaje recibido en PROD_movistar: {"venta_id":"446","estado_nuevo":"comentario","entorno":"PROD_movistar"}
+[2025-01-24T20:49:49.148Z] Actualización de estado de la venta recibida: Venta ID 446, Nuevo Estado comentario
+[2025-01-24T20:49:49.151Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T20:49:49.151Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T20:49:49.161Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T20:49:49.164Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T20:49:49.166Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T20:49:49.173Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T20:49:49.391Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T20:49:49.477Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T20:49:49.704Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T20:49:49.831Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T20:49:49.902Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T20:49:50.090Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T20:49:50.126Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T20:49:50.176Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T20:49:50.188Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T20:49:50.273Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T20:49:50.576Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T20:49:50.761Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T20:49:50.806Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T20:49:51.982Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T20:49:52.686Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T20:50:08.006Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T20:52:26.796Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T20:56:10.765Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T20:56:28.408Z] Mensaje recibido en PROD_movistar: {"venta_id":"425","estado_nuevo":"INGRESADO","entorno":"PROD_movistar"}
+[2025-01-24T20:56:28.408Z] Actualización de estado de la venta recibida: Venta ID 425, Nuevo Estado INGRESADO
+[2025-01-24T20:56:34.762Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T20:57:51.543Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T20:57:51.742Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T20:57:51.754Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T20:57:52.295Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T20:57:52.596Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T20:57:52.839Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T20:57:52.839Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T20:57:52.855Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T20:57:53.028Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T20:57:53.446Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T20:57:53.815Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T20:57:53.934Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T20:57:54.155Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T20:57:54.362Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T20:57:54.510Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T20:57:54.828Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T20:57:54.898Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T20:57:55.118Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T20:57:55.565Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T20:57:55.600Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T20:57:55.677Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T20:57:56.152Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T20:57:56.652Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T20:58:08.357Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T20:58:18.451Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T20:59:28.214Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T21:03:36.624Z] Mensaje recibido en PROD_movistar: {"venta_id":"447","estado_nuevo":"AUDITADO","entorno":"PROD_movistar"}
+[2025-01-24T21:03:36.624Z] Actualización de estado de la venta recibida: Venta ID 447, Nuevo Estado AUDITADO
+[2025-01-24T21:03:55.717Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T21:05:01.682Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T21:05:02.876Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T21:05:03.212Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T21:05:03.660Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T21:05:03.717Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T21:05:03.819Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T21:05:03.880Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T21:05:03.898Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T21:05:04.095Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T21:05:04.972Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T21:05:05.174Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T21:05:05.270Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T21:05:05.379Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T21:05:05.504Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T21:05:05.521Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T21:05:05.701Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T21:05:05.708Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T21:05:05.796Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T21:05:06.016Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T21:05:06.202Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T21:05:06.445Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T21:05:06.633Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T21:05:28.235Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T21:05:41.409Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T21:05:45.807Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T21:05:52.243Z] Mensaje recibido en PROD_movistar: {"venta_id":"447","estado_nuevo":"POR_INGRESAR","entorno":"PROD_movistar"}
+[2025-01-24T21:05:52.243Z] Actualización de estado de la venta recibida: Venta ID 447, Nuevo Estado POR_INGRESAR
+[2025-01-24T21:06:28.037Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T21:12:10.285Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T21:12:29.627Z] Mensaje recibido en PROD_movistar: {"venta_id":"448","estado_nuevo":"INGRESADO","entorno":"PROD_movistar"}
+[2025-01-24T21:12:29.627Z] Actualización de estado de la venta recibida: Venta ID 448, Nuevo Estado INGRESADO
+[2025-01-24T21:13:05.724Z] Mensaje recibido en PROD_movistar: {"venta_id":"282","estado_nuevo":"RECHAZADO","entorno":"PROD_movistar"}
+[2025-01-24T21:13:05.725Z] Actualización de estado de la venta recibida: Venta ID 282, Nuevo Estado RECHAZADO
+[2025-01-24T21:15:30.338Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T21:15:30.605Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T21:15:30.744Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T21:15:30.792Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T21:15:31.017Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T21:15:31.049Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T21:15:31.109Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T21:15:31.229Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T21:15:31.362Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T21:15:31.435Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T21:15:31.435Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T21:15:31.497Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T21:15:31.767Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T21:15:31.782Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T21:15:31.815Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T21:15:31.815Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T21:15:31.848Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T21:15:32.146Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T21:15:36.769Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T21:15:51.161Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T21:18:14.936Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T21:18:42.862Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T21:19:36.583Z] Mensaje recibido en PROD_movistar: {"venta_id":"450","estado_nuevo":"comentario","entorno":"PROD_movistar"}
+[2025-01-24T21:19:36.583Z] Actualización de estado de la venta recibida: Venta ID 450, Nuevo Estado comentario
+[2025-01-24T21:21:07.320Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T21:21:12.286Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T21:21:52.324Z] Mensaje recibido en PROD_movistar: {"venta_id":"448","estado_nuevo":"comentario","entorno":"PROD_movistar"}
+[2025-01-24T21:21:52.324Z] Actualización de estado de la venta recibida: Venta ID 448, Nuevo Estado comentario
+[2025-01-24T21:28:07.472Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T21:28:07.587Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T21:28:07.663Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T21:28:07.699Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T21:28:07.758Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T21:28:07.820Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T21:28:07.826Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T21:28:08.072Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T21:28:08.080Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T21:28:08.185Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T21:28:08.192Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T21:28:08.354Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T21:28:08.424Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T21:28:08.477Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T21:28:08.487Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T21:28:08.711Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T21:28:08.726Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T21:28:08.941Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T21:28:09.583Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T21:28:10.185Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T21:28:10.715Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T21:29:33.935Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T21:30:08.191Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T21:30:10.588Z] Mensaje recibido en PROD_movistar: {"venta_id":"428","estado_nuevo":"POR_INGRESAR","entorno":"PROD_movistar"}
+[2025-01-24T21:30:10.588Z] Actualización de estado de la venta recibida: Venta ID 428, Nuevo Estado POR_INGRESAR
+[2025-01-24T21:30:31.268Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T21:32:34.232Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T21:33:40.275Z] Mensaje recibido en PROD_movistar: {"venta_id":"447","estado_nuevo":"INGRESADO","entorno":"PROD_movistar"}
+[2025-01-24T21:33:40.275Z] Actualización de estado de la venta recibida: Venta ID 447, Nuevo Estado INGRESADO
+[2025-01-24T21:33:40.906Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T21:33:48.930Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T21:35:32.825Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T21:36:21.716Z] Mensaje recibido en PROD_movistar: {"venta_id":"447","estado_nuevo":"APROBADO","entorno":"PROD_movistar"}
+[2025-01-24T21:36:21.716Z] Actualización de estado de la venta recibida: Venta ID 447, Nuevo Estado APROBADO
+[2025-01-24T21:37:28.564Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T21:40:10.808Z] Mensaje recibido en PROD_movistar: {"venta_id":"446","estado_nuevo":"comentario","entorno":"PROD_movistar"}
+[2025-01-24T21:40:10.808Z] Comentario de la venta recibida: Venta ID 446, Nuevo Estado comentario
+[2025-01-24T21:40:56.042Z] Mensaje recibido en PROD_movistar: {"venta_id":"","estado_nuevo":"SOCKET","entorno":"PROD_movistar"}
+[2025-01-24T21:40:56.042Z] Mensaje recibido con formato incorrecto.
+[2025-01-24T21:43:13.948Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T21:43:21.609Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T21:45:26.052Z] Mensaje recibido en PROD_movistar: {"venta_id":"","estado_nuevo":"SOCKET","entorno":"PROD_movistar"}
+[2025-01-24T21:45:26.052Z] Mensaje recibido con formato incorrecto.
+[2025-01-24T21:45:39.676Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T21:46:58.095Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T21:48:05.932Z] Mensaje recibido en PROD_movistar: {"venta_id":"459","estado_nuevo":"SOCKET","entorno":"PROD_movistar"}
+[2025-01-24T21:48:05.932Z] Actualización de estado de la venta recibida: Venta ID 459, Nuevo Estado SOCKET
+[2025-01-24T21:48:11.305Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T21:48:25.014Z] Mensaje recibido en PROD_movistar: {"venta_id":"440","estado_nuevo":"RECHAZADO","entorno":"PROD_movistar"}
+[2025-01-24T21:48:25.014Z] Actualización de estado de la venta recibida: Venta ID 440, Nuevo Estado RECHAZADO
+[2025-01-24T21:48:35.340Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T21:50:02.104Z] Mensaje recibido en PROD_movistar: {"venta_id":"402","estado_nuevo":"APROBADO","entorno":"PROD_movistar"}
+[2025-01-24T21:50:02.104Z] Actualización de estado de la venta recibida: Venta ID 402, Nuevo Estado APROBADO
+[2025-01-24T21:50:52.955Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T21:52:01.224Z] Mensaje recibido en PROD_movistar: {"venta_id":"294","estado_nuevo":"RECHAZADO","entorno":"PROD_movistar"}
+[2025-01-24T21:52:01.224Z] Actualización de estado de la venta recibida: Venta ID 294, Nuevo Estado RECHAZADO
+[2025-01-24T21:52:07.547Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T21:53:27.840Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T21:53:45.455Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T21:55:27.461Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T21:57:03.982Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T21:57:08.043Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T21:57:46.077Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T21:58:13.141Z] Mensaje recibido en PROD_movistar: {"venta_id":"450","estado_nuevo":"POR_AUDITAR","entorno":"PROD_movistar"}
+[2025-01-24T21:58:13.141Z] Actualización de estado de la venta recibida: Venta ID 450, Nuevo Estado POR_AUDITAR
+[2025-01-24T21:58:24.036Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T21:58:49.679Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T21:59:01.377Z] Mensaje recibido en PROD_movistar: {"venta_id":"459","estado_nuevo":"SOCKET","entorno":"PROD_movistar"}
+[2025-01-24T21:59:01.377Z] Actualización de estado de la venta recibida: Venta ID 459, Nuevo Estado SOCKET
+[2025-01-24T21:59:31.558Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T21:59:46.929Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T21:59:51.275Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T21:59:58.565Z] Mensaje recibido en PROD_movistar: {"venta_id":"458","estado_nuevo":"SOCKET","entorno":"PROD_movistar"}
+[2025-01-24T21:59:58.565Z] Actualización de estado de la venta recibida: Venta ID 458, Nuevo Estado SOCKET
+[2025-01-24T22:00:06.883Z] Mensaje recibido en PROD_movistar: {"venta_id":"420","estado_nuevo":"APROBADO","entorno":"PROD_movistar"}
+[2025-01-24T22:00:06.884Z] Actualización de estado de la venta recibida: Venta ID 420, Nuevo Estado APROBADO
+[2025-01-24T22:00:19.901Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T22:01:00.035Z] Mensaje recibido en PROD_movistar: {"venta_id":"458","estado_nuevo":"POR_AUDITAR","entorno":"PROD_movistar"}
+[2025-01-24T22:01:00.035Z] Actualización de estado de la venta recibida: Venta ID 458, Nuevo Estado POR_AUDITAR
+[2025-01-24T22:01:09.980Z] Mensaje recibido en PROD_movistar: {"venta_id":"459","estado_nuevo":"SOCKET","entorno":"PROD_movistar"}
+[2025-01-24T22:01:09.980Z] Actualización de estado de la venta recibida: Venta ID 459, Nuevo Estado SOCKET
+[2025-01-24T22:01:55.073Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T22:02:42.929Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T22:03:45.413Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T22:04:56.780Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T22:05:23.746Z] Mensaje recibido en PROD_movistar: {"venta_id":"459","estado_nuevo":"SOCKET","entorno":"PROD_movistar"}
+[2025-01-24T22:05:23.746Z] Actualización de estado de la venta recibida: Venta ID 459, Nuevo Estado SOCKET
+[2025-01-24T22:05:30.172Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T22:05:41.823Z] Comentario de la venta recibida: Venta ID 450, Nuevo Estado comentario
+[2025-01-24T22:05:41.823Z] Mensaje recibido en PROD_movistar: {"venta_id":"450","estado_nuevo":"comentario","entorno":"PROD_movistar"}
+[2025-01-24T22:05:57.999Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T22:06:16.196Z] Mensaje recibido en PROD_movistar: {"venta_id":"459","estado_nuevo":"POR_AUDITAR","entorno":"PROD_movistar"}
+[2025-01-24T22:06:16.196Z] Actualización de estado de la venta recibida: Venta ID 459, Nuevo Estado POR_AUDITAR
+[2025-01-24T22:07:28.184Z] Mensaje recibido en PROD_movistar: {"venta_id":"","estado_nuevo":"SOCKET","entorno":"PROD_movistar"}
+[2025-01-24T22:07:28.184Z] Mensaje recibido con formato incorrecto.
+[2025-01-24T22:08:14.071Z] Mensaje recibido en PROD_movistar: {"venta_id":"379","estado_nuevo":"SOCKET","entorno":"PROD_movistar"}
+[2025-01-24T22:08:14.071Z] Actualización de estado de la venta recibida: Venta ID 379, Nuevo Estado SOCKET
+[2025-01-24T22:08:22.957Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T22:08:31.959Z] Mensaje recibido en PROD_movistar: {"venta_id":"379","estado_nuevo":"POR_AUDITAR","entorno":"PROD_movistar"}
+[2025-01-24T22:08:31.959Z] Actualización de estado de la venta recibida: Venta ID 379, Nuevo Estado POR_AUDITAR
+[2025-01-24T22:09:33.072Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T22:09:45.998Z] Mensaje recibido en PROD_movistar: {"venta_id":"464","estado_nuevo":"SOCKET","entorno":"PROD_movistar"}
+[2025-01-24T22:09:45.998Z] Actualización de estado de la venta recibida: Venta ID 464, Nuevo Estado SOCKET
+[2025-01-24T22:10:16.528Z] Actualización de estado de la venta recibida: Venta ID 282, Nuevo Estado REENVIAR_ASCP
+[2025-01-24T22:10:16.528Z] Mensaje recibido en PROD_movistar: {"venta_id":"282","estado_nuevo":"REENVIAR_ASCP","entorno":"PROD_movistar"}
+[2025-01-24T22:12:03.111Z] Mensaje recibido en PROD_movistar: {"venta_id":"464","estado_nuevo":"POR_AUDITAR","entorno":"PROD_movistar"}
+[2025-01-24T22:12:03.111Z] Actualización de estado de la venta recibida: Venta ID 464, Nuevo Estado POR_AUDITAR
+[2025-01-24T22:13:12.021Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T22:14:06.712Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T22:17:24.395Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T22:24:45.381Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T22:24:46.039Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T22:24:46.751Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T22:24:46.754Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T22:24:47.283Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T22:25:42.212Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T22:29:13.494Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T22:29:40.526Z] Mensaje recibido en PROD_movistar: {"venta_id":"282","estado_nuevo":"comentario","entorno":"PROD_movistar"}
+[2025-01-24T22:29:40.526Z] Comentario de la venta recibida: Venta ID 282, Nuevo Estado comentario
+[2025-01-24T23:49:33.764Z] Cliente unido a la room: PROD_movistar
+[2025-01-24T23:49:40.228Z] Mensaje recibido en PROD_movistar: {"venta_id":"6","estado_nuevo":"comentario","entorno":"PROD_movistar"}
+[2025-01-24T23:49:40.228Z] Comentario de la venta recibida: Venta ID 6, Nuevo Estado comentario
+[2025-01-25T00:19:21.602Z] Cliente unido a la room: PROD_movistar
+[2025-01-25T00:19:25.067Z] Cliente unido a la room: PROD_movistar
+[2025-01-25T00:19:29.779Z] Mensaje recibido en PROD_movistar: {"venta_id":"6","estado_nuevo":"comentario","entorno":"PROD_movistar"}
+[2025-01-25T00:19:29.779Z] Comentario de la venta recibida: Venta ID 6, Nuevo Estado comentario
+[2025-01-25T00:20:38.950Z] Cliente unido a la room: PROD_movistar
