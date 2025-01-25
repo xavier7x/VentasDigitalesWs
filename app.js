@@ -3,6 +3,7 @@ const http = require('http');
 const socketIo = require('socket.io');
 const path = require('path');
 const fs = require('fs');
+const compression = require('compression'); // Compresión HTTP
 
 const app = express();
 const server = http.createServer(app);
@@ -18,8 +19,12 @@ const io = socketIo(server, {
   }
 });
 
+// Middleware para compresión
+app.use(compression());
+
 // Mapa para rastrear las salas y los usuarios conectados
 const rooms = new Map(); // { roomName: Set<socketId> }
+const userSockets = new Map(); // { userId: Set<socketId> }
 
 // Directorio donde se almacenan los logs
 const LOG_DIRECTORY = path.join(__dirname, '/logs');
@@ -82,107 +87,96 @@ const INTERVALO_LIMPIEZA = 3 * 24 * 60 * 60 * 1000; // Tres días en milisegundo
 setInterval(() => limpiarLogsAntiguos(3), INTERVALO_LIMPIEZA);
 
 io.on('connection', (socket) => {
-  log('general', `Nueva conexión establecida: ${socket.id}`);
+  const userId = socket.handshake.query.userId; // Obtener userId del handshake
+  log('general', `Nueva conexión establecida: ${socket.id} con userId: ${userId || 'anónimo'}`);
 
-  // Manejar errores inesperados en cada socket
-  socket.on('error', (err) => {
-    log('general', `Error en la conexión de ${socket.id}: ${err.message}`);
-    socket.disconnect(); // Desconectar al cliente defectuoso
-  });
+  // Asociar socket con userId
+  if (userId) {
+    if (!userSockets.has(userId)) {
+      userSockets.set(userId, new Set());
+    }
+    userSockets.get(userId).add(socket.id);
+  }
 
   // Unir al cliente a una sala (room)
   socket.on('joinRoom', (entornoConModulo) => {
-    try {
-      const room = entornoConModulo;
+    const room = entornoConModulo;
 
-      // Registrar al usuario en la sala
-      if (!rooms.has(room)) {
-        rooms.set(room, new Set());
-      }
-      rooms.get(room).add(socket.id);
-      socket.join(room);
-
-      log(room, `Cliente ${socket.id} unido a la room: ${room}`);
-    } catch (err) {
-      log('general', `Error al unir cliente a la room: ${err.message}`);
+    // Registrar al usuario en la sala
+    if (!rooms.has(room)) {
+      rooms.set(room, new Set());
     }
-  });
+    rooms.get(room).add(socket.id);
+    socket.join(room);
 
-  // Escuchar eventos en la sala
-  socket.on('actualizarEstadoVenta', (data) => {
-    try {
-      log('general', `Mensaje recibido: ${JSON.stringify(data)}`);
+    log(room, `Cliente ${socket.id} con userId: ${userId || 'anónimo'} unido a la room: ${room}`);
+
+    // Escuchar eventos en la sala
+    socket.on('actualizarEstadoVenta', (data) => {
+      log(room, `Mensaje recibido en ${room}: ` + JSON.stringify(data));
       if (data.venta_id && data.estado_nuevo) {
-        io.to(data.room).emit('actualizarEstadoVenta', data); // Emitir evento a la sala
-        log(data.room, `Emitido a room: ${data.venta_id}`);
+        io.to(room).emit('actualizarEstadoVenta', data); // Emitir evento a la sala
+        log(room, `Emitido a room ${room}: Actualización de venta ID ${data.venta_id}`);
       } else {
-        log('general', 'Mensaje recibido con formato incorrecto.');
+        log(room, 'Mensaje recibido con formato incorrecto.');
       }
-    } catch (err) {
-      log('general', `Error al procesar evento: ${err.message}`);
-    }
-  });
+    });
 
-  socket.on('nuevoComentario', (data) => {
-    try {
+    socket.on('nuevoComentario', (data) => {
+      log(room, `Mensaje recibido en ${room}: ` + JSON.stringify(data));
       if (data.venta_id && data.estado_nuevo) {
-        io.to(data.room).emit('nuevoComentario', data);
-        log(data.room, `Emitido nuevoComentario a la room`);
+        io.to(room).emit('nuevoComentario', data); // Emitir evento a la sala
+        log(room, `Emitido a room ${room}: Comentario en venta ID ${data.venta_id}`);
       } else {
-        throw new Error('Datos inválidos en nuevoComentario');
+        log(room, 'Mensaje recibido con formato incorrecto.');
       }
-    } catch (err) {
-      log('general', `Error al manejar nuevoComentario: ${err.message}`);
-    }
+    });
   });
 
   // Manejo de desconexión
   socket.on('disconnect', () => {
     log('general', `Conexión cerrada: ${socket.id}`);
-    try {
-      for (const [room, clients] of rooms.entries()) {
-        if (clients.has(socket.id)) {
-          clients.delete(socket.id);
-          log(room, `Cliente ${socket.id} removido de la room: ${room}`);
 
-          // Eliminar la sala si queda vacía
-          if (clients.size === 0) {
-            rooms.delete(room);
-            log('general', `Room eliminada: ${room}`);
-          }
+    // Remover socket de userId
+    if (userId && userSockets.has(userId)) {
+      const sockets = userSockets.get(userId);
+      sockets.delete(socket.id);
+      if (sockets.size === 0) {
+        userSockets.delete(userId);
+      }
+    }
+
+    // Remover al usuario de todas las salas
+    for (const [room, clients] of rooms.entries()) {
+      if (clients.has(socket.id)) {
+        clients.delete(socket.id);
+        log(room, `Cliente ${socket.id} removido de la room: ${room}`);
+
+        // Eliminar la sala si queda vacía
+        if (clients.size === 0) {
+          rooms.delete(room);
+          log('general', `Room eliminada porque quedó vacía: ${room}`);
         }
       }
-    } catch (err) {
-      log('general', `Error al manejar desconexión: ${err.message}`);
     }
   });
-});
 
-// Manejo global de errores en el servidor
-process.on('uncaughtException', (err) => {
-  console.error('Excepción no controlada:', err.message);
-  // Opcional: reiniciar el servidor si es crítico
-});
-
-process.on('unhandledRejection', (reason, promise) => {
-  console.error('Promesa rechazada sin manejar:', reason);
-  // Opcional: reiniciar el servidor si es crítico
+  // Manejo de errores
+  socket.on('error', (err) => {
+    log('general', `Error en la conexión de ${socket.id}: ${err}`);
+  });
 });
 
 // Endpoint para consultar el estado de las salas
 app.get('/rooms', (req, res) => {
-  try {
-    const roomStatus = {};
-    for (const [room, clients] of rooms.entries()) {
-      roomStatus[room] = Array.from(clients); // Mostrar IDs de clientes en cada sala
-    }
-    res.json(roomStatus);
-  } catch (err) {
-    res.status(500).send('Error al obtener rooms');
+  const roomStatus = {};
+  for (const [room, clients] of rooms.entries()) {
+    roomStatus[room] = Array.from(clients); // Mostrar IDs de clientes en cada sala
   }
+  res.json(roomStatus);
 });
 
-// Servir archivos estáticos (opcional)
+// Servir archivos estáticos
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.get('/', (req, res) => {
