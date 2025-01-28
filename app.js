@@ -8,7 +8,7 @@ const app = express();
 const server = http.createServer(app);
 const io = socketIo(server, {
   path: '/vivo',
-  connectionStateRecovery: {
+  connectionStateRecovery: { 
     maxDisconnectionDuration: 2 * 60 * 1000, // 2 minutos para recuperación de conexión
     skipMiddlewares: true, // Omitir middlewares en reconexión
   },
