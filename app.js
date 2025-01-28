@@ -84,6 +84,16 @@ io.on('connection', (socket) => {
     }
   });
 
+  socket.on('disconnecting', () => {
+    const userRooms = Array.from(socket.rooms).filter(r => r !== socket.id);
+    userRooms.forEach(room => {
+      if (rooms.has(room)) {
+        rooms.get(room).delete(socket.id);
+        log(room, `Cliente ${socket.id} eliminando antes de desconexión.`);
+      }
+    });
+  });
+
   // Manejo de desconexión
   socket.on('disconnect', () => {
     log('general', `Cliente desconectado: ${socket.id}`);
