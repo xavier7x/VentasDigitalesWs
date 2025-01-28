@@ -1,138 +1,121 @@
-import express from 'express';
-import { createServer } from 'node:http';
-import { Server } from 'socket.io';
-import { availableParallelism } from 'node:os';
-import cluster from 'node:cluster';
-import { createAdapter, setupPrimary } from '@socket.io/cluster-adapter';
-import morgan from 'morgan'; // Logs HTTP en consola
+const express = require('express');
+const http = require('http');
+const socketIo = require('socket.io');
+const path = require('path');
+const fs = require('fs');
 
-// Número de CPUs disponibles
-if (cluster.isPrimary) {
-  const numCPUs = availableParallelism();
-
-  // Crear un worker por cada núcleo disponible
-  for (let i = 0; i < numCPUs; i++) {
-    cluster.fork({
-      PORT: 3000 + i
-    });
+const app = express();
+const server = http.createServer(app);
+const io = socketIo(server, {
+  path: '/vivo',
+  connectionStateRecovery: {
+    maxDisconnectionDuration: 2 * 60 * 1000, // 2 minutos para recuperación de conexión
+    skipMiddlewares: true, // Omitir middlewares en reconexión
+  },
+  //transports: ['websocket'], // Compatibilidad con cliente (solo websocket)
+  pingTimeout: 30000, // Tiempo máximo para esperar un ping (30 segundos)
+  pingInterval: 10000, // Intervalo para enviar pings (10 segundos)
+  cors: {
+    origin: "*", // Permitir cualquier origen
+    methods: ["GET", "POST"], // Métodos permitidos
+    credentials: false // Si deseas aceptar cookies, cambia a true
   }
+});
 
-  // Configurar el adaptador en el hilo principal
-  setupPrimary();
-} else {
-  const app = express();
-  const server = createServer(app);
-  const io = new Server(server, {
-    connectionStateRecovery: {
-      maxDisconnectionDuration: 2 * 60 * 1000, // 2 minutos para recuperación de conexión
-      skipMiddlewares: true, // Omitir middlewares en reconexión
-    },
-    adapter: createAdapter(), // Configuración del adaptador de cluster
-  });
-
-  // Middleware de Morgan para ver logs en consola
-  app.use(morgan('dev'));
-
-  // Mapa para rastrear usuarios y salas
-  const rooms = new Map(); // { roomName: Set<socketId> }
-  const userSockets = new Map(); // { userId: Set<socketId> }
-
-  const disconnectTimeout = 60000; // Tiempo de desconexión por inactividad (60s)
-
-  io.on('connection', (socket) => {
-    const userId = socket.handshake.query.userId; // Obtener userId desde la query
-
-    console.log(`🔗 Usuario conectado: ${socket.id} - userId: ${userId || 'anónimo'}`);
-
-    // Asignar socket a userId
-    if (userId) {
-      if (!userSockets.has(userId)) {
-        userSockets.set(userId, new Set());
-      }
-      userSockets.get(userId).add(socket.id);
+// Función para registrar logs en un archivo, ahora acepta el nombre de la room
+function log(room, message) {
+  const timestamp = new Date().toISOString();
+  const logMessage = `[${timestamp}] ${message}\n`;
+  // Nombre de archivo de log dinámico basado en la room
+  const logFileName = `app_${room}.log`;
+  fs.appendFile(logFileName, logMessage, err => {
+    if (err) {
+      console.error(`Error al escribir en el archivo de log para la room ${room}:`, err);
     }
-
-    // Manejo de recuperación de estado de conexión
-    if (socket.recovered) {
-      console.log(`♻️ Conexión recuperada: ${socket.id}`);
-    }
-
-    // Unir usuario a una sala específica
-    socket.on('join room', (room) => {
-      if (!rooms.has(room)) {
-        rooms.set(room, new Set());
-      }
-      rooms.get(room).add(socket.id);
-      socket.join(room);
-
-      console.log(`🏠 Usuario ${socket.id} unido a la sala: ${room}`);
-    });
-
-    // Evento de actualización de estado de venta
-    socket.on('actualizarEstadoVenta', (data, room) => {
-      io.to(room).emit('actualizarEstadoVenta', data);
-      console.log(`📢 Estado de venta actualizado en room ${room}:`, data);
-    });
-
-    // Evento de nuevo comentario
-    socket.on('nuevoComentario', (data, room) => {
-      io.to(room).emit('nuevoComentario', data);
-      console.log(`💬 Nuevo comentario en room ${room}:`, data);
-    });
-
-    // Manejo de inactividad (auto desconexión)
-    let disconnectTimer;
-    socket.on('activity', () => {
-      clearTimeout(disconnectTimer);
-      disconnectTimer = setTimeout(() => {
-        socket.disconnect(true);
-      }, disconnectTimeout);
-    });
-
-    // Manejo de desconexión
-    socket.on('disconnect', () => {
-      console.log(`❌ Usuario desconectado: ${socket.id}`);
-
-      if (userId && userSockets.has(userId)) {
-        const sockets = userSockets.get(userId);
-        sockets.delete(socket.id);
-        if (sockets.size === 0) {
-          userSockets.delete(userId);
-        }
-      }
-
-      // Eliminar usuario de todas las salas
-      for (const [room, clients] of rooms.entries()) {
-        if (clients.has(socket.id)) {
-          clients.delete(socket.id);
-          console.log(`🚪 Usuario ${socket.id} removido de la sala: ${room}`);
-          if (clients.size === 0) {
-            rooms.delete(room);
-          }
-        }
-      }
-    });
   });
-
-  // Endpoint para consultar el estado de las salas
-  app.get('/rooms', (req, res) => {
-    const roomStatus = {};
-    for (const [room, clients] of rooms.entries()) {
-      roomStatus[room] = Array.from(clients);
-    }
-    res.json(roomStatus);
-  });
-
-  // Configuración de CORS
-  app.use((req, res, next) => {
-    res.header('Access-Control-Allow-Origin', '*'); // 🔥 Permitir cualquier origen
-    res.header('Access-Control-Allow-Methods', 'GET, POST');
-    next();
-  });
-
-  // Cada worker escuchará en un puerto distinto
-  const port = process.env.PORT || 3000;
-  server.listen(port, () => {
-    console.log(`✅ Servidor Socket.IO ejecutándose en http://localhost:${port}`);
-  });
+  console.log(`[${room}] ${logMessage.trim()}`); // Añadir prefijo de room a la consola
 }
+
+// Mapa para rastrear las salas activas y sus clientes
+const rooms = new Map(); // { roomName: Set<socketId> }
+
+io.on('connection', (socket) => {
+  log('general', `Nueva conexión establecida: ${socket.id}`); // Log general para conexión
+
+  // Unir al cliente a la room adecuada
+  socket.on('joinRoom', (entornoConModulo) => {
+    const room = entornoConModulo;
+
+    if (!rooms.has(room)) {
+      rooms.set(room, new Set());
+    }
+    rooms.get(room).add(socket.id);
+    socket.join(room);
+    log(room, `Cliente ${socket.id} unido a la room: ${room}`);
+  });
+
+  // Evento de actualización de estado de venta
+  socket.on('actualizarEstadoVenta', (data) => {
+    const room = Array.from(socket.rooms).find((r) => r !== socket.id);
+    if (!room) {
+      log('general', `Error: Cliente ${socket.id} no está en ninguna room.`);
+      return;
+    }
+    if (data.venta_id && data.estado_nuevo) {
+      log(room, `Estado de venta actualizado: Venta ID ${data.venta_id}, Nuevo Estado ${data.estado_nuevo}`);
+      io.to(room).emit('actualizarEstadoVenta', data);
+    } else {
+      log(room, `Error: Datos de venta incompletos - ${JSON.stringify(data)}`);
+    }
+  });
+
+  // Evento de nuevo comentario
+  socket.on('nuevoComentario', (data) => {
+    const room = Array.from(socket.rooms).find((r) => r !== socket.id);
+    if (!room) {
+      log('general', `Error: Cliente ${socket.id} no está en ninguna room.`);
+      return;
+    }
+    if (data.venta_id && data.comentario) {
+      log(room, `Nuevo comentario: Venta ID ${data.venta_id}, Comentario: ${data.comentario}`);
+      io.to(room).emit('nuevoComentario', data);
+    } else {
+      log(room, `Error: Datos de comentario incompletos - ${JSON.stringify(data)}`);
+    }
+  });
+
+  // Manejo de desconexión
+  socket.on('disconnect', () => {
+    log('general', `Cliente desconectado: ${socket.id}`);
+    for (const [room, clients] of rooms.entries()) {
+      if (clients.has(socket.id)) {
+        clients.delete(socket.id);
+        log(room, `Cliente ${socket.id} removido de la room: ${room}`);
+        if (clients.size === 0) {
+          rooms.delete(room);
+          log('general', `Room ${room} eliminada por estar vacía`);
+        }
+        break;
+      }
+    }
+  });
+
+  // Manejo de errores
+  socket.on('error', (err) => {
+    log('general', `Error en la conexión: ${err.message}`);
+  });
+});
+
+// Servir archivos estáticos (opcional)
+app.use(express.static(path.join(__dirname, 'public')));
+
+// Ruta de prueba
+app.get('/', (req, res) => {
+  res.send('Servidor Socket.IO está en funcionamiento');
+});
+
+// Iniciar servidor
+const PORT = process.env.PORT || 3000;
+server.listen(PORT, () => {
+  log('general', `Servidor escuchando en el puerto ${PORT}`);
+});
