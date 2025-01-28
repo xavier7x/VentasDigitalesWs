@@ -3,188 +3,210 @@ const http = require('http');
 const socketIo = require('socket.io');
 const path = require('path');
 const fs = require('fs');
-const compression = require('compression'); // Compresión HTTP
+const compression = require('compression');
+const winston = require('winston');
+const cluster = require('cluster');
+const numCPUs = require('os').cpus().length;
 
-const app = express();
-const server = http.createServer(app);
-const io = socketIo(server, {
-  path: '/vivo',
-  transports: ['websocket'], // Asegurar compatibilidad con cliente
-  pingTimeout: 30000, // Tiempo máximo para esperar un ping (30 segundos)
-  pingInterval: 10000, // Intervalo para enviar pings (10 segundos)
-  cors: {
-    origin: "*", // Permitir cualquier origen
-    methods: ["GET", "POST"], // Métodos permitidos
-    credentials: false // Si deseas aceptar cookies, cambia a true
-  }
-});
+// Función para iniciar el servidor worker
+function initWorker() {
+  const app = express();
+  const server = http.createServer(app);
 
-// Middleware para compresión
-app.use(compression());
-
-// Mapa para rastrear las salas y los usuarios conectados
-const rooms = new Map(); // { roomName: Set<socketId> }
-const userSockets = new Map(); // { userId: Set<socketId> }
-
-// Directorio donde se almacenan los logs
-const LOG_DIRECTORY = path.join(__dirname, '/logs');
-
-// Crear el directorio de logs si no existe
-if (!fs.existsSync(LOG_DIRECTORY)) {
-  fs.mkdirSync(LOG_DIRECTORY);
-}
-
-// Función para registrar logs
-function log(room, message) {
-  const timestamp = new Date().toISOString();
-  const logMessage = `[${timestamp}] ${message}\n`;
-  const logFileName = path.join(LOG_DIRECTORY, `app_${room}.log`);
-  fs.appendFile(logFileName, logMessage, (err) => {
-    if (err) {
-      console.error(`Error al escribir en el archivo de log para la room ${room}:`, err);
-    }
+  // Configuración de Socket.IO sin forzar websocket
+  const io = socketIo(server, {
+    path: '/vivo',
+    connectionStateRecovery: {},
+    maxHttpBufferSize: 1e6, // 1 MB
+    pingTimeout: 30000,
+    pingInterval: 10000,
+    cors: {
+      origin: "*",
+      methods: ["GET", "POST"],
+      credentials: false
+    },
+    // Configuración para hosting compartido
+    allowEIO3: true, // Permite compatibilidad con versiones anteriores
+    transports: ['polling', 'websocket'], // Permite polling como fallback
+    upgrade: true // Permite actualizar de polling a websocket
   });
-  console.log(`[${room}] ${logMessage.trim()}`);
-}
 
-// Función para limpiar logs antiguos
-function limpiarLogsAntiguos(dias) {
-  const ahora = Date.now();
-  const limiteTiempo = dias * 24 * 60 * 60 * 1000; // Convertir días a milisegundos
+  // Configuración de Winston y directorio de logs
+  const LOG_DIRECTORY = path.join(__dirname, '/logs');
+  if (!fs.existsSync(LOG_DIRECTORY)) {
+    fs.mkdirSync(LOG_DIRECTORY);
+  }
 
-  fs.readdir(LOG_DIRECTORY, (err, files) => {
-    if (err) {
-      console.error('Error al leer el directorio de logs:', err);
-      return;
+  const logger = winston.createLogger({
+    format: winston.format.combine(
+      winston.format.timestamp(),
+      winston.format.json()
+    ),
+    transports: [
+      new winston.transports.File({ 
+        filename: path.join(LOG_DIRECTORY, `worker-${process.pid}-error.log`), 
+        level: 'error',
+        maxsize: 5242880,
+        maxFiles: 5
+      }),
+      new winston.transports.File({ 
+        filename: path.join(LOG_DIRECTORY, `worker-${process.pid}-combined.log`),
+        maxsize: 5242880,
+        maxFiles: 5
+      })
+    ]
+  });
+
+  // Middleware
+  app.use(compression());
+
+  // Estructuras de datos compartidas
+  const rooms = new Map();
+  const userSockets = new WeakMap();
+
+  // Función de logging
+  function log(room, message, level = 'info') {
+    const logData = {
+      workerId: process.pid,
+      room,
+      message,
+      timestamp: new Date().toISOString()
+    };
+    logger[level](logData);
+    if (process.env.NODE_ENV !== 'production') {
+      console.log(`[Worker ${process.pid}][${room}] ${message}`);
+    }
+  }
+
+  // Manejo de conexiones Socket.IO
+  io.on('connection', (socket) => {
+    const userId = socket.handshake.query.userId;
+    log('general', `Nueva conexión: ${socket.id} (userId: ${userId || 'anónimo'})`);
+
+    if (userId) {
+      const userSocketSet = userSockets.get(userId) || new Set();
+      userSocketSet.add(socket.id);
+      userSockets.set(userId, userSocketSet);
     }
 
-    files.forEach((file) => {
-      const filePath = path.join(LOG_DIRECTORY, file);
-
-      fs.stat(filePath, (err, stats) => {
-        if (err) {
-          console.error(`Error al obtener la información del archivo ${file}:`, err);
-          return;
+    socket.on('joinRoom', (entornoConModulo) => {
+      const room = entornoConModulo;
+      
+      try {
+        if (!rooms.has(room)) {
+          rooms.set(room, new Set());
         }
+        rooms.get(room).add(socket.id);
+        socket.join(room);
+        
+        log(room, `Cliente ${socket.id} unido a room: ${room}`);
 
-        // Verificar si el archivo es más antiguo que el límite de tiempo
-        if (ahora - stats.mtimeMs > limiteTiempo) {
-          fs.unlink(filePath, (err) => {
-            if (err) {
-              console.error(`Error al eliminar el archivo de log ${file}:`, err);
-            } else {
-              console.log(`Archivo de log eliminado: ${file}`);
+        // Eventos de sala
+        socket.on('actualizarEstadoVenta', (data) => {
+          try {
+            if (!data?.venta_id || !data?.estado_nuevo) {
+              throw new Error('Datos incompletos');
             }
-          });
-        }
-      });
+            io.to(room).emit('actualizarEstadoVenta', data);
+            log(room, `Actualización venta ID ${data.venta_id}`);
+          } catch (error) {
+            log(room, `Error en actualizarEstadoVenta: ${error.message}`, 'error');
+          }
+        });
+
+        socket.on('nuevoComentario', (data) => {
+          try {
+            if (!data?.venta_id || !data?.estado_nuevo) {
+              throw new Error('Datos incompletos');
+            }
+            io.to(room).emit('nuevoComentario', data);
+            log(room, `Nuevo comentario en venta ID ${data.venta_id}`);
+          } catch (error) {
+            log(room, `Error en nuevoComentario: ${error.message}`, 'error');
+          }
+        });
+      } catch (error) {
+        log('general', `Error al unirse a room: ${error.message}`, 'error');
+      }
     });
+
+    socket.on('disconnect', () => {
+      try {
+        log('general', `Desconexión: ${socket.id}`);
+
+        if (userId && userSockets.has(userId)) {
+          const userSocketSet = userSockets.get(userId);
+          userSocketSet.delete(socket.id);
+          if (userSocketSet.size === 0) {
+            userSockets.delete(userId);
+          }
+        }
+
+        for (const [room, clients] of rooms.entries()) {
+          if (clients.has(socket.id)) {
+            clients.delete(socket.id);
+            log(room, `Cliente ${socket.id} removido de room: ${room}`);
+
+            if (clients.size === 0) {
+              rooms.delete(room);
+              log('general', `Room eliminada: ${room}`);
+            }
+          }
+        }
+      } catch (error) {
+        log('general', `Error en disconnect: ${error.message}`, 'error');
+      }
+    });
+
+    socket.on('error', (error) => {
+      log('general', `Error de socket: ${error.message}`, 'error');
+    });
+  });
+
+  // Endpoints
+  app.get('/health', (req, res) => {
+    res.json({
+      status: 'OK',
+      workerId: process.pid,
+      uptime: process.uptime()
+    });
+  });
+
+  // Iniciar servidor
+  const PORT = process.env.PORT || 3000;
+  server.listen(PORT, () => {
+    log('general', `Worker ${process.pid} iniciado en puerto ${PORT}`);
   });
 }
 
-// Programar limpieza de logs cada tres días
-const INTERVALO_LIMPIEZA = 3 * 24 * 60 * 60 * 1000; // Tres días en milisegundos
-setInterval(() => limpiarLogsAntiguos(3), INTERVALO_LIMPIEZA);
+// Iniciar cluster
+if (cluster.isMaster) {
+  console.log(`Master ${process.pid} iniciando`);
 
-io.on('connection', (socket) => {
-  const userId = socket.handshake.query.userId; // Obtener userId del handshake
-  log('general', `Nueva conexión establecida: ${socket.id} con userId: ${userId || 'anónimo'}`);
+  // Limitar el número de workers en hosting compartido
+  const workerCount = Math.min(numCPUs, 2); // Máximo 2 workers en hosting compartido
 
-  // Asociar socket con userId
-  if (userId) {
-    if (!userSockets.has(userId)) {
-      userSockets.set(userId, new Set());
-    }
-    userSockets.get(userId).add(socket.id);
+  // Crear workers
+  for (let i = 0; i < workerCount; i++) {
+    cluster.fork();
   }
 
-  // Unir al cliente a una sala (room)
-  socket.on('joinRoom', (entornoConModulo) => {
-    const room = entornoConModulo;
-
-    // Registrar al usuario en la sala
-    if (!rooms.has(room)) {
-      rooms.set(room, new Set());
-    }
-    rooms.get(room).add(socket.id);
-    socket.join(room);
-
-    log(room, `Cliente ${socket.id} con userId: ${userId || 'anónimo'} unido a la room: ${room}`);
-
-    // Escuchar eventos en la sala
-    socket.on('actualizarEstadoVenta', (data) => {
-      log(room, `Mensaje recibido en ${room}: ` + JSON.stringify(data));
-      if (data.venta_id && data.estado_nuevo) {
-        io.to(room).emit('actualizarEstadoVenta', data); // Emitir evento a la sala
-        log(room, `Emitido a room ${room}: Actualización de venta ID ${data.venta_id}`);
-      } else {
-        log(room, 'Mensaje recibido con formato incorrecto.');
-      }
-    });
-
-    socket.on('nuevoComentario', (data) => {
-      log(room, `Mensaje recibido en ${room}: ` + JSON.stringify(data));
-      if (data.venta_id && data.estado_nuevo) {
-        io.to(room).emit('nuevoComentario', data); // Emitir evento a la sala
-        log(room, `Emitido a room ${room}: Comentario en venta ID ${data.venta_id}`);
-      } else {
-        log(room, 'Mensaje recibido con formato incorrecto.');
-      }
-    });
+  cluster.on('exit', (worker, code, signal) => {
+    console.log(`Worker ${worker.process.pid} murió. Reiniciando...`);
+    cluster.fork();
   });
+} else {
+  initWorker();
+}
 
-  // Manejo de desconexión
-  socket.on('disconnect', () => {
-    log('general', `Conexión cerrada: ${socket.id}`);
-
-    // Remover socket de userId
-    if (userId && userSockets.has(userId)) {
-      const sockets = userSockets.get(userId);
-      sockets.delete(socket.id);
-      if (sockets.size === 0) {
-        userSockets.delete(userId);
-      }
-    }
-
-    // Remover al usuario de todas las salas
-    for (const [room, clients] of rooms.entries()) {
-      if (clients.has(socket.id)) {
-        clients.delete(socket.id);
-        log(room, `Cliente ${socket.id} removido de la room: ${room}`);
-
-        // Eliminar la sala si queda vacía
-        if (clients.size === 0) {
-          rooms.delete(room);
-          log('general', `Room eliminada porque quedó vacía: ${room}`);
-        }
-      }
-    }
-  });
-
-  // Manejo de errores
-  socket.on('error', (err) => {
-    log('general', `Error en la conexión de ${socket.id}: ${err}`);
-  });
-});
-
-// Endpoint para consultar el estado de las salas
-app.get('/rooms', (req, res) => {
-  const roomStatus = {};
-  for (const [room, clients] of rooms.entries()) {
-    roomStatus[room] = Array.from(clients); // Mostrar IDs de clientes en cada sala
+// Manejo de errores no capturados
+process.on('uncaughtException', (error) => {
+  console.error('Error no capturado', error);
+  if (process.env.NODE_ENV === 'production') {
+    process.exit(1);
   }
-  res.json(roomStatus);
 });
 
-// Servir archivos estáticos
-app.use(express.static(path.join(__dirname, 'public')));
-
-app.get('/', (req, res) => {
-  res.send('Servidor Socket.IO está en funcionamiento');
-});
-
-// Iniciar el servidor
-const PORT = process.env.PORT || 3000;
-server.listen(PORT, () => {
-  log('general', `Servidor escuchando en el puerto ${PORT}`);
+process.on('unhandledRejection', (reason, promise) => {
+  console.error('Promesa rechazada no manejada', reason);
 });
