@@ -1,131 +1,133 @@
 const express = require('express');
-const http = require('http');
-const socketIo = require('socket.io');
-const path = require('path');
-const fs = require('fs');
+const { createServer } = require('http');
+const { Server } = require('socket.io');
+const { availableParallelism } = require('os');
+const cluster = require('cluster');
+const { createAdapter, setupPrimary } = require('@socket.io/cluster-adapter');
 
-const app = express();
-const server = http.createServer(app);
-const io = socketIo(server, {
-  path: '/vivo',
-  connectionStateRecovery: {
-    maxDisconnectionDuration: 2 * 60 * 1000, // 2 minutos para recuperación de conexión
-    skipMiddlewares: true, // Omitir middlewares en reconexión
-  },
-  //transports: ['websocket'], // Compatibilidad con cliente (solo websocket)
-  pingTimeout: 30000, // Tiempo máximo para esperar un ping (30 segundos)
-  pingInterval: 10000, // Intervalo para enviar pings (10 segundos)
-  cors: {
-    origin: "*", // Permitir cualquier origen
-    methods: ["GET", "POST"], // Métodos permitidos
-    credentials: false // Si deseas aceptar cookies, cambia a true
+if (cluster.isPrimary) {
+  const numCPUs = availableParallelism();
+  console.log(`🖥️ Iniciando en modo cluster con ${numCPUs} núcleos.`);
+
+  // Crea un worker por cada núcleo disponible
+  for (let i = 0; i < numCPUs; i++) {
+    cluster.fork({ PORT: 3000 + i });
   }
-});
 
-// Función para registrar logs en un archivo, ahora acepta el nombre de la room
-function log(room, message) {
-  const timestamp = new Date().toISOString();
-  const logMessage = `[${timestamp}] ${message}\n`;
-  // Nombre de archivo de log dinámico basado en la room
-  const logFileName = `app_${room}.log`;
-  fs.appendFile(logFileName, logMessage, err => {
-    if (err) {
-      console.error(`Error al escribir en el archivo de log para la room ${room}:`, err);
-    }
-  });
-  console.log(`[${room}] ${logMessage.trim()}`); // Añadir prefijo de room a la consola
-}
+  // Configurar el adaptador en el hilo principal
+  setupPrimary();
 
-// Mapa para rastrear las salas activas y sus clientes
-const rooms = new Map(); // { roomName: Set<socketId> }
-
-io.on('connection', (socket) => {
-  log('general', `Nueva conexión establecida: ${socket.id}`); // Log general para conexión
-
-  // Unir al cliente a la room adecuada
-  socket.on('joinRoom', (entornoConModulo) => {
-    const room = entornoConModulo;
-
-    if (!rooms.has(room)) {
-      rooms.set(room, new Set());
-    }
-    rooms.get(room).add(socket.id);
-    socket.join(room);
-    log(room, `Cliente ${socket.id} unido a la room: ${room}`);
+  // Manejo de reinicio automático de workers si fallan
+  cluster.on('exit', (worker, code, signal) => {
+    console.warn(`⚠️ Worker ${worker.process.pid} cayó. Reiniciando...`);
+    cluster.fork();
   });
 
-  // Evento de actualización de estado de venta
-  socket.on('actualizarEstadoVenta', (data) => {
-    const room = Array.from(socket.rooms).find((r) => r !== socket.id);
-    if (!room) {
-      log('general', `Error: Cliente ${socket.id} no está en ninguna room.`);
-      return;
-    }
-    if (data.venta_id && data.estado_nuevo) {
-      log(room, `Estado de venta actualizado: Venta ID ${data.venta_id}, Nuevo Estado ${data.estado_nuevo}`);
-      io.to(room).emit('actualizarEstadoVenta', data);
-    } else {
-      log(room, `Error: Datos de venta incompletos - ${JSON.stringify(data)}`);
-    }
+} else {
+  const app = express();
+  const server = createServer(app);
+  const io = new Server(server, {
+    path: '/vivo',
+    connectionStateRecovery: {
+      maxDisconnectionDuration: 2 * 60 * 1000, // 2 minutos de recuperación de conexión
+      skipMiddlewares: true,
+    },
+    cleanupEmptyChildNamespaces: true, // Eliminar namespaces vacíos
+    pingTimeout: 30000, // Máximo 30s esperando ping
+    pingInterval: 10000, // Enviar ping cada 10s
+    cors: {
+      origin: "*",
+      methods: ["GET", "POST"],
+      credentials: false
+    },
+    adapter: createAdapter() // Configurar cluster-adapter para múltiples instancias
   });
 
-  // Evento de nuevo comentario
-  socket.on('nuevoComentario', (data) => {
-    const room = Array.from(socket.rooms).find((r) => r !== socket.id);
-    if (!room) {
-      log('general', `Error: Cliente ${socket.id} no está en ninguna room.`);
-      return;
-    }
-    if (data.venta_id && data.comentario) {
-      log(room, `Nuevo comentario: Venta ID ${data.venta_id}, Comentario: ${data.comentario}`);
-      io.to(room).emit('nuevoComentario', data);
-    } else {
-      log(room, `Error: Datos de comentario incompletos - ${JSON.stringify(data)}`);
-    }
-  });
+  // Función de logs
+  function log(room, message) {
+    const timestamp = new Date().toISOString();
+    console.log(`[${room}] ${timestamp} - ${message}`);
+  }
 
-  socket.on('disconnecting', () => {
-    const userRooms = Array.from(socket.rooms).filter(r => r !== socket.id);
-    userRooms.forEach(room => {
-      if (rooms.has(room)) {
-        rooms.get(room).delete(socket.id);
-        log(room, `Cliente ${socket.id} eliminando antes de desconexión.`);
+  // Mapa para rastrear las salas activas y sus clientes
+  const rooms = new Map();
+
+  // Manejador de conexiones
+  io.on('connection', (socket) => {
+    log('general', `Nueva conexión establecida: ${socket.id}`);
+
+    socket.on('joinRoom', (room) => {
+      if (!rooms.has(room)) rooms.set(room, new Set());
+      rooms.get(room).add(socket.id);
+      socket.join(room);
+      log(room, `Cliente ${socket.id} unido.`);
+    });
+
+    // Actualización de estado de venta
+    socket.on('actualizarEstadoVenta', (data) => {
+      try {
+        const room = [...socket.rooms].find(r => r !== socket.id);
+        if (room && data.venta_id && data.estado_nuevo) {
+          io.to(room).emit('actualizarEstadoVenta', data);
+          log(room, `Venta ID ${data.venta_id} actualizada a ${data.estado_nuevo}`);
+        } else {
+          log('general', `Error en actualizarEstadoVenta: datos inválidos - ${JSON.stringify(data)}`);
+        }
+      } catch (error) {
+        log('general', `Error en actualizarEstadoVenta: ${error.message}`);
       }
+    });
+
+    // Nuevo comentario
+    socket.on('nuevoComentario', (data) => {
+      try {
+        const room = [...socket.rooms].find(r => r !== socket.id);
+        if (room && data.venta_id && data.comentario) {
+          io.to(room).emit('nuevoComentario', data);
+          log(room, `Nuevo comentario en venta ID ${data.venta_id}`);
+        } else {
+          log('general', `Error en nuevoComentario: datos inválidos - ${JSON.stringify(data)}`);
+        }
+      } catch (error) {
+        log('general', `Error en nuevoComentario: ${error.message}`);
+      }
+    });
+
+    // Manejo de desconexión
+    socket.on('disconnecting', () => {
+      const userRooms = [...socket.rooms].filter(r => r !== socket.id);
+      userRooms.forEach(room => {
+        if (rooms.has(room)) {
+          rooms.get(room).delete(socket.id);
+          log(room, `Cliente ${socket.id} eliminado antes de desconexión.`);
+          if (rooms.get(room).size === 0) {
+            rooms.delete(room);
+            log('general', `Room ${room} eliminada por estar vacía.`);
+          }
+        }
+      });
+    });
+
+    socket.on('disconnect', () => {
+      log('general', `Cliente desconectado: ${socket.id}`);
+    });
+
+    socket.on('error', (err) => {
+      log('general', `Error en la conexión: ${err.message}`);
     });
   });
 
-  // Manejo de desconexión
-  socket.on('disconnect', () => {
-    log('general', `Cliente desconectado: ${socket.id}`);
-    for (const [room, clients] of rooms.entries()) {
-      if (clients.has(socket.id)) {
-        clients.delete(socket.id);
-        log(room, `Cliente ${socket.id} removido de la room: ${room}`);
-        if (clients.size === 0) {
-          rooms.delete(room);
-          log('general', `Room ${room} eliminada por estar vacía`);
-        }
-        break;
-      }
-    }
+  // Servir archivos estáticos
+  app.use(express.static('public'));
+
+  // Ruta de prueba
+  app.get('/', (req, res) => {
+    res.send('Servidor Socket.IO está en funcionamiento');
   });
 
-  // Manejo de errores
-  socket.on('error', (err) => {
-    log('general', `Error en la conexión: ${err.message}`);
+  // Iniciar servidor
+  const port = process.env.PORT || 3000;
+  server.listen(port, () => {
+    log('general', `Servidor escuchando en puerto ${port} - Worker ${process.pid}`);
   });
-});
-
-// Servir archivos estáticos (opcional)
-app.use(express.static(path.join(__dirname, 'public')));
-
-// Ruta de prueba
-app.get('/', (req, res) => {
-  res.send('Servidor Socket.IO está en funcionamiento');
-});
-
-// Iniciar servidor
-const PORT = process.env.PORT || 3000;
-server.listen(PORT, () => {
-  log('general', `Servidor escuchando en el puerto ${PORT}`);
-});
+}
